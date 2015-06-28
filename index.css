@@ -1,0 +1,36 @@
+body {
+  font-family: 'Lato', sans-serif; }
+
+#header {
+    position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: 5% auto;
+  text-align: center;
+  border: 2px dashed blue;
+  top:0;
+  z-index:2;
+  background-color: cyan; 
+
+}
+
+.leftcol {
+  float: left;
+  display: inline-block ;
+  border: 2px dashed blue;
+   }
+
+.rightcol {
+  float: right;
+  border: 2px solid red; }
+
+h2 {
+  color: #5c8; }
+
+aside ul {
+  list-style-type: none;
+  padding-left: 0; }
+
+body > div {
+  margin-top: 140px;
+}
