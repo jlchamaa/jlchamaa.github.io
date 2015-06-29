@@ -1,36 +1,60 @@
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+    background-color: #59bae3; //body color
+}
 
 #header {
-    position: fixed;
+  position: fixed;
   left: 0;
   right: 0;
   margin-left: 5% auto;
   text-align: center;
-  border: 2px dashed blue;
   top:0;
   z-index:2;
-  background-color: cyan; 
-
+  background-color: #6C7A89; //header color
 }
-
-.leftcol {
-  float: left;
-  display: inline-block ;
-  border: 2px dashed blue;
-   }
-
-.rightcol {
-  float: right;
-  border: 2px solid red; }
-
+#content{
+display: flex;
+justify-content: center;
+}
+h1{
+color: white;
+}
 h2 {
-  color: #5c8; }
-
+  color: #34495e;  
+}
+h3{
+  color:antiquewhite; 
+}
+#rightcol{
+    padding-left : 50px;
+    border-left: solid  #000000;
+    border-left-width: thin
+}
+#leftcol{
+    padding-right: 50px;
+}
 aside ul {
   list-style-type: none;
-  padding-left: 0; }
+  padding-left: 0;
+}
 
 body > div {
   margin-top: 140px;
+}
+.job{
+border-left: solid;
+padding-left: 10px;
+margin-bottom: 30px;
+}
+.project{
+border-left: solid;
+padding-left: 10px;
+}
+.chunk{
+    border-left: solid;
+    padding-left: 10px;
+    border-left-color: black;
+    margin-bottom: 50px;
+    border-left-width: thin;
 }
