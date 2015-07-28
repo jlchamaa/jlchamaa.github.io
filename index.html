@@ -214,28 +214,8 @@
             <script src="js/material.min.js"></script>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
             <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-            <script>
-            $(document).ready(function() {
-            // This command is used to initialize some elements and make them work properly
-            $.material.init();
-            $("[data-toggle=popover]").popover();
-            $("#edu").click(function(){
-            $("#education").show(500);
-            $("#experience").hide(500);
-            $("#extracurricular").hide(500);
-            });
-            $("#exp").click(function(){
-            $("#education").hide(500);
-            $("#experience").show(500);
-            $("#extracurricular").hide(500);
-            });
-            $("#exc").click(function(){
-            if($("#education").is(':hidden')){
-                $("#extracurricular").show("slide",{ direction: "right" }, "slow");
-            }
-            });
-            });
-            </script>
+            <script src="js/mine.js"></script>
+            
         </body>
     </html>
     <!--
