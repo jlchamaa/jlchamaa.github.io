@@ -2,6 +2,15 @@ $(document).ready(function() {
 // This command is used to initialize some elements and make them work properly
     $.material.init();
     $("[data-toggle=popover]").popover();
+    $('[data-toggle=offcanvas]').click(function () {
+        if ($('.sidebar-offcanvas').css('background-color') == 'rgb(255, 255, 255)') {
+            $('.list-group-item').attr('tabindex', '-1');
+        } else {
+            $('.list-group-item').attr('tabindex', '');
+        }
+        $('.row-offcanvas').toggleClass('active');
+        
+      });
     $("#edu").click(function(){
         if(!$("#experience").is(':hidden')){
         hidediv("#experience","left",500);

@@ -7,49 +7,56 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="jquery-ui.min.css">
         <link href="css/roboto.min.css" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/flaticon.css">
         <link href="css/material-fullpalette.css" rel="stylesheet">
         <link href="css/ripples.min.css" rel="stylesheet">
-        <link href="index.css" rel="stylesheet">
         <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
         
     </head>
+    
+    
     <body>
         <div class="container-fluid">
             <section id="header">
-                <nav class="navbar navbar-material-indigo navbar-default  ">
-                    <div class="container col-xs-6">
+                <nav class="navbar navbar-material-indigo navbar-default row">
+                    <div class="container col-md-6  col-xs-12">
                         <h1 class="text-center">Jean-Luc Chamaa</h1>
+                        <p class="pull-left">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
                         <h4 class="text-center"><i>Mechanical Engineering Student</i> at UCLA</h4>
                     </div>
-                    <div class="col-xs-4">
+                    <div class="text-center col-md-4 col-xs-offset-3 col-md-offset-0 col-xs-6  col-md-0">
                         <div class="btn-group btn-group-justified">
-                            <a class="btn btn-primary btn-raised btn-material-teal flaticon-envelope3" data-container="body" data-toggle="popover" data-placement="left" data-content="jlchamaa@gmail.com">&nbsp &nbsp<small class="visible-lg-inline">E-Mail</small></a>
-                            <a href="https://www.linkedin.com/in/jlchamaa" target="_blank" class="btn btn-primary btn-raised btn-material-teal flaticon-linked2">&nbsp &nbsp<small class="visible-lg-inline">LinkedIn</small></a>
-                            <a href="https://github.com/jeanlucchamaa" target="_blank" class="btn btn-primary btn-raised btn-material-teal flaticon-github7">&nbsp &nbsp<small class="visible-lg-inline">Github</small></a>
+                            <a class="btn btn-primary btn-raised btn-material-teal flaticon-envelope3" ></a>
+                            <a href="https://www.linkedin.com/in/jlchamaa" target="_blank" class="btn btn-primary btn-raised btn-material-teal flaticon-linked2"></a>
+                            <a href="https://github.com/jeanlucchamaa" target="_blank" class="btn btn-primary btn-raised btn-material-teal flaticon-github7"></a>
                         </div>
                         <div class="btn-group btn-group-justified">
-                            <a class="btn btn-primary btn-raised btn-material-teal flaticon-mobile26" data-container="body" data-toggle="popover" data-placement="left" data-content="(805) 312-5578">&nbsp &nbsp<small class="visible-lg-inline">Phone</small></a>
-                            <a href="https://www.facebook.com/jeanlucchamaa" target="_blank" class="btn btn-primary btn-raised btn-material-teal flaticon-facebook23">&nbsp &nbsp<small class="visible-lg-inline">Facebook</small></a>
-                            <a href="https://instagram.com/jlchamaa/" target="_blank" class="btn btn-primary btn-raised btn-material-teal flaticon-instagram2">&nbsp &nbsp<small class="visible-lg-inline">Instagram</small></a>
+                            <a class="btn btn-primary btn-raised btn-material-teal flaticon-mobile26"></a>
+                            <a href="https://www.facebook.com/jeanlucchamaa" target="_blank" class="btn btn-primary btn-raised btn-material-teal flaticon-facebook23"></a>
+                            <a href="https://instagram.com/jlchamaa/" target="_blank" class="btn btn-primary btn-raised btn-material-teal flaticon-instagram2"></a>
                         </div>
                     </div>
                 </nav>
             </section>
         </div>
+        
+        
         <div class="container-fluid">
-            <div class="row" id="content">
-                <div class="col-md-3 sidebar">
-                    <ul class="nav nav-pills nav-stacked fixed">
-                        <li><h1><btn id="edu"><span class='glyphicon glyphicon-education'></span>&nbspEducation</btn></h1>
+            <div class="row  row-offcanvas row-offcanvas-left">
+                <div class="col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                    <ul class="sidebar-nav">
+                        <li><h2><btn id="edu"><span class='glyphicon glyphicon-education'></span>&nbspEducation</btn></h2>
                         
-                        <li><h1><btn id="exp"><span class='glyphicon glyphicon-pencil'></span>&nbspExperience</btn></h1>
+                        <li><h2><btn id="exp"><span class='glyphicon glyphicon-pencil'></span>&nbspExperience</btn></h2>
                         
-                        <li><h1><btn id="exc"><span class='glyphicon glyphicon-knight'></span>&nbspExtra-curricular</btn></h1>
+                        <li><h2><btn id="exc"><span class='glyphicon glyphicon-knight'></span>&nbspExtra-curricular</btn></h2>
                     </ul>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <div class="panel panel-default" id="education">
                         <div class="panel-heading"><h2>Education</h2></div>
                         <div class="panel-body"><h3>UCLA School of Engineering</h3>
@@ -221,9 +228,10 @@
             
             <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
             <script src="js/mine.js"></script>
-            
         </body>
     </html>
     <!--
-    Credits: https://github.com/FezVrasta/bootstrap-material-design http://www.flaticon.com/packs/icomoon-free-1/
+    Credits: https://github.com/FezVrasta/bootstrap-material-design 
+http://www.flaticon.com/packs/icomoon-free-1/
+http://www.bootply.com/113767#
     -->
