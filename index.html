@@ -23,10 +23,8 @@
                 <div class="navbar navbar-material-indigo navbar-default">
                     <div class="container col-md-6  col-xs-12">
                         <h1 class="text-center">Jean-Luc Chamaa</h1>
-                        <p class="pull-left visible-xs">
-                            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-                        </p>
                         <h4 class="text-center"><i>Mechanical Engineering Student</i> at UCLA</h4>
+                        
                     </div>
                     <div class="text-center col-md-4 col-xs-offset-3 col-md-offset-0 col-xs-6  col-md-0">
                         <div class="btn-group btn-group-justified">
@@ -40,6 +38,9 @@
                             <a href="https://instagram.com/jlchamaa/" target="_blank" class="btn btn-primary btn-raised btn-material-teal flaticon-instagram2"></a>
                         </div>
                     </div>
+                    <div class="visible-xs col-xs-12">
+                        <a class="btn btn-primary btn-xs" data-toggle="offcanvas"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                    </div>
                 </div>
             </section>
         </div>
@@ -47,42 +48,46 @@
         
         
         <div class="row  row-offcanvas row-offcanvas-left">
-            <div class="col-sm-3 col-xs-6 sidebar-offcanvas" id="sidebar" role="navigation">
-                <div class="card">
-                    
+            <div class="col-xs-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                
+                <div class="matcard">
                     <div class="list-group">
-                        <div id="edu" class="list-group-item" >
-                            <div class="row-action-primary">
-                                <i class="glyphicon glyphicon-education"></i>
+                        
+                        <div class="list-group-item" >
+                            <div class="row-action-primary checkbox checkbox-material-teal">
+                                <label><input type="checkbox" checked="" id="edu"></label>
                             </div>
-                            <div class="row-action-content">
-                                <h4 class="list-group-item-heading">&nbsp Education</h4>
-                                <p  class="list-group-item-text">Pizza</p>
-                            </div>
-                        </div>
-                        <div class="list-group-separator"></div>
-                        <div id="exp" class="list-group-item" >
-                            <div class="row-action-primary">
-                                <i class="glyphicon glyphicon-pencil"></i>
-                            </div>
-                            <div class="row-action-content">&nbsp Experience</h4>
+                            <div class="row-content">
+                                <h4 class="list-group-item-heading">Education</h4>
+                                <p class="list-group-item-text">Schooling and Coursework</p>
                             </div>
                         </div>
                         <div class="list-group-separator"></div>
-                        <div id="exc" class="list-group-item" >
-                            <div class="row-action-primary">
-                                <i class=" glyphicon glyphicon-knight"></i>
+                        <div class="list-group-item">
+                            <div class="row-action-primary checkbox checkbox-material-teal">
+                                <label><input type="checkbox" checked="" id="exp"></label>
                             </div>
-                            <div class="row-action-content">
-                                <h4 class="list-group-item-heading">&nbsp Extra-Curricular</h4>
-                                <p  class="list-group-item-text">Pizza</p>
+                            <div class="row-content">
+                                <h4 class="list-group-item-heading">Experience</h4>
+                                <p class="list-group-item-text">Work, Internships, and Volunteering</p>
                             </div>
                         </div>
+                        <div class="list-group-separator"></div>
+                        <div class="list-group-item">
+                            <div class="row-action-primary checkbox checkbox-material-teal">
+                                <label><input type="checkbox" checked="" id="exc"></label>
+                            </div>
+                            <div class="row-content">
+                                <h4 class="list-group-item-heading">Extracurricular</h4>
+                                <p class="list-group-item-text">Out-of-class projects and club involvement</p>
+                            </div>
+                        </div>
+                        <div class="list-group-separator"></div>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-3 col-sm-6">
-                <div class="panel panel-default" id="education">
+            <div class="col-xs-6">
+                <div class="panel panel-default shadow-z-2" id="education">
                     <div class="panel-heading"><h2>Education</h2></div>
                     <div class="panel-body"><h3>UCLA School of Engineering</h3>
                         <h4>Bachelor of Science in Mechanical Engineering (4<sup>th</sup> yr)</h4>
@@ -99,7 +104,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="panel panel-default" id="experience">
+                <div class="panel panel-default shadow-z-2" id="experience">
                     <div class="panel-heading">
                     <h2>Work Experience</h2></div>
                     <div class="panel-body">
@@ -135,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-default" id="extracurricular">
+                <div class="panel panel-default shadow-z-2" id="extracurricular">
                     <div class="panel-heading">
                     <h2>Projects & Involvement</h2> </div>
                     <div class="panel-body">
@@ -184,8 +189,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-3" id="skills">
-                <div class="card">
+            <div class="col-xs-6 col-sm-3" id="skills">
+                <div class="matcard">
                     <h2>Skills</h2>
                     <h4>Software</h4>
                     <ul>

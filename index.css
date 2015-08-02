@@ -2,6 +2,26 @@
  * Style tweaks
  * --------------------------------------------------
  */
+
+#education{
+  overflow:hidden;
+}
+#extracurricular{
+  overflow: hidden;
+}
+#experience{
+  overflow: hidden;
+}
+.matcard{
+  width:auto;
+  background-color: #fff;
+  margin-top: 0;
+}
+
+
+
+
+
 html,
 body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
@@ -14,6 +34,7 @@ body {
 footer {
   padding: 30px 0;
 }
+
 
 /*
  * Off Canvas

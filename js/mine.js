@@ -1,3 +1,4 @@
++
 $(document).ready(function() {
 // This command is used to initialize some elements and make them work properly
     $.material.init();
@@ -5,40 +6,36 @@ $(document).ready(function() {
         $('.row-offcanvas').toggleClass('active')
     });
     $("[data-toggle=popover]").popover();
+        var eduheight = $('#education').height();
+        var expheight = $('#experience').height();
+        var excheight = $('#extracurricular').height();
+
     $("#edu").click(function(){
-        if(!$("#experience").is(':hidden')){
-        hidediv("#experience","left",500);
-        var timeoutID = setTimeout(showdiv,750,"#education","left",1250);
+        var tempheight = $('#education').height();
+        if(tempheight==0){
+        $('#education').animate({height:eduheight,marginBottom:"+=20px"});
         }
-        if(!$("#extracurricular").is(':hidden')){
-            hidediv("#extracurricular","left",500);
-            var timeoutID = setTimeout(showdiv,750,"#education","left",1250);
-    }
+        else{
+            $('#education').animate({height:0,marginBottom:"-=20px"});
+        }
     });
     $("#exp").click(function(){
-        if(!$("#education").is(':hidden')){
-        hidediv("#education","left",500);
-        var timeoutID = setTimeout(showdiv,750,"#experience","left",1250);
+        var tempheight = $('#experience').height();
+        if(tempheight==0){
+        $('#experience').animate({height:expheight,marginBottom:"+=20px"});
+       
         }
-        if(!$("#extracurricular").is(':hidden')){
-            hidediv("#extracurricular","left",500);
-            var timeoutID = setTimeout(showdiv,750,"#experience","left",1250);
+        else{
+            $('#experience').animate({height:0,marginBottom:"-=20px"});
         }
     });
     $("#exc").click(function(){
-        if(!$("#education").is(':hidden')){
-            hidediv("#education","left",500);
-            var timeoutID = setTimeout(showdiv,750,"#extracurricular","left",1250);
+        var tempheight = $('#extracurricular').height();
+        if(tempheight==0){
+        $('#extracurricular').animate({height:excheight,marginBottom:"+=20px"});
         }
-        if(!$("#experience").is(':hidden')){
-            hidediv("#experience","left",500);
-            var timeoutID = setTimeout(showdiv,750,"#extracurricular","left",1250);
+        else{
+            $('#extracurricular').animate({height:0,marginBottom:"-=20px"});
         }
-        });
+    });
 });
-function showdiv(div,dir,speed){
-    $(div).show("slide",{ direction: dir, easing: 'easeOutQuint', duration: speed});
-}
-function hidediv(div,dir,speed){
-    $(div).hide("slide",{ direction: dir, easing: 'easeInQuint', duration: speed});
-}
