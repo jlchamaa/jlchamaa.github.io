@@ -6,9 +6,9 @@ $(document).ready(function() {
         $('.row-offcanvas').toggleClass('active')
     });
     $("[data-toggle=popover]").popover();
-        var eduheight = $('#education').height();
-        var expheight = $('#experience').height();
-        var excheight = $('#extracurricular').height();
+    var eduheight = $('#education').height();
+    var expheight = $('#experience').height();
+    var excheight = $('#extracurricular').height();
 
     $("#edu").click(function(){
         var tempheight = $('#education').height();

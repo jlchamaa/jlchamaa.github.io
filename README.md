@@ -1,3 +1,4 @@
 # jeanlucchamaa.github.io
-WEBPAGE
-Irvine is mehhhhh
+
+Developing Jean's professional website.
+I may or may not have any idea what I'm doing.
