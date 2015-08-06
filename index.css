@@ -46,11 +46,33 @@ footer {
     left: -50%; /* 6 columns */
     transition: all .25s ease-out;
     top: 100;
-    width: 50%; /* 6 columns */
+    width: 0px; /* 6 columns */
   }
 
   .row-offcanvas.active {
-    z-index: 1;
+    z-index: 2;
     left: 0%; /* 6 columns */
+    width: 320px;
+    
+
   }
+  .row.active:after {
+    content: "";
+    display: block;
+    position: absolute; /* could also be absolute */ 
+    top: 0;
+    left: 0;
+    height: 1000%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.5);
+}
+
+  .togglebutton{
+    z-index:3;
+  }
+  .all.active{
+    overflow: hidden;
+  }
+  
 }

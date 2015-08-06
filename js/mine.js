@@ -3,7 +3,9 @@ $(document).ready(function() {
 // This command is used to initialize some elements and make them work properly
     $.material.init();
     $('[data-toggle="offcanvas"]').click(function () {
-        $('.row-offcanvas').toggleClass('active')
+        $('.row-offcanvas').toggleClass('active');
+        $('.row').toggleClass('active');
+        $('.all').toggleClass('active');
     });
     $("[data-toggle=popover]").popover();
     var eduheight = $('#education').height();
