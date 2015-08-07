@@ -35,6 +35,15 @@ footer {
   padding: 30px 0;
 }
 
+.navbar{
+  position: relative;
+
+}
+.toggleholder{
+  position: absolute;
+  bottom:0;
+}
+
 
 /*
  * Off Canvas

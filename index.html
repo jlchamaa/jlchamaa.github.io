@@ -21,12 +21,12 @@
         <div class="container-fluid">
             <section id="header">
                 <div class="navbar navbar-material-indigo navbar-default">
-                    <div class="container col-md-6  col-xs-12">
+                    <div class="col-xs-1 hidden-md hidden-lg text-center toggleholder"> <a class="togglebutton btn btn-primary btn-sm" data-toggle="offcanvas"><span class="glyphicon glyphicon-menu-hamburger"></span></a></div>
+                    <div class="container col-md-6  col-xs-10">
                         <h1 class="text-center">Jean-Luc Chamaa</h1>
                         <h4 class="text-center"><i>Mechanical Engineering Student</i> at UCLA</h4>
-                        
                     </div>
-                    <div class="text-center col-md-4 col-md-offset-0 col-xs-12  col-md-0">
+                    <div class="text-center col-md-4  visible-md visible-lg">
                         <div class="btn-group btn-group-justified">
                             <a class="btn btn-primary btn-raised btn-material-teal flaticon-envelope3" ></a>
                             <a href="https://www.linkedin.com/in/jlchamaa" target="_blank" class="btn btn-primary btn-raised btn-material-teal flaticon-linked2"></a>
@@ -38,224 +38,227 @@
                             <a href="https://instagram.com/jlchamaa/" target="_blank" class="btn btn-primary btn-raised btn-material-teal flaticon-instagram2"></a>
                         </div>
                     </div>
-                    <div class=" visible-sm visible-xs col-xs-12">
-                        <a class="togglebutton btn btn-primary btn-sm" data-toggle="offcanvas"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
+    </div>
+    
+    
+    <div class="row">
+        <div class="col-md-3 col-xs-0 row-offcanvas " id="sidebar">
+            
+            <div class="matcard">
+                <h3>
+                <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
+                    
+                    
+                    <li class="dropdown hidden-md hidden-lg">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="bootstrap-elements.html">
+                            <span class="mdi-navigation-arrow-drop-down"></span>Expand Sections
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="row-action-primary checkbox checkbox-material-teal">
+                                    <label><input type="checkbox" checked="" id="edu">&nbsp&nbsp Education</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row-action-primary checkbox checkbox-material-teal">
+                                    <label><input type="checkbox" checked="" id="exp">&nbsp&nbsp Experience</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row-action-primary checkbox checkbox-material-teal">
+                                    <label><input type="checkbox" checked="" id="exc">&nbsp&nbsp Extracurricular</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown hidden-md hidden-lg">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="bootstrap-elements.html">
+                            <span class="mdi-navigation-arrow-drop-down"></span> Contact
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a></a></li>
+                            <li><a href="https://www.linkedin.com/in/jlchamaa" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/jeanlucchamaa" target="_blank">Github</a></li>
+                            <li><a></a></li>
+                            <li><a href="https://www.facebook.com/jeanlucchamaa" target="_blank">Facebook</a></li>
+                            <li><a href="https://instagram.com/jlchamaa/" target="_blank">Instagram</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </h3>
+            </div>
         </div>
-        
-        
-        <div class="row">
-            <div class="col-md-3 col-xs-0 row-offcanvas " id="sidebar">
-                
-                <div class="matcard">
+        <div class="col-md-6 col-xs-9">
+            <div class="panel panel-default shadow-z-2" id="education">
+                <div class="panel-heading"><h2>Education</h2></div>
+                <div class="panel-body"><h3>UCLA School of Engineering</h3>
+                    <h4>Bachelor of Science in Mechanical Engineering (4<sup>th</sup> yr)</h4>
+                    <h2>Relevant Coursework</h2>
+                    <ul>
+                        <li>Statics & Strength of Materials</li>
+                        <li>Dynamics of Rigid Bodies</li>
+                        <li>Fluid Dynamics</li>
+                        <li>Thermodynamics & Heat Transfer</li>
+                        <li>Computer Science (C++)</li>
+                        <li>Feedback & Control</li>
+                        <li>Electrical Circuits & Analysis</li>
+                        <li>Analysis of Dynamic Systems</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default shadow-z-2" id="experience">
+                <div class="panel-heading">
+                <h2>Work Experience</h2></div>
+                <div class="panel-body">
                     <div class="list-group">
-                        
-                        <div class="list-group-item" >
-                            <div class="row-action-primary checkbox checkbox-material-teal">
-                                <label><input type="checkbox" checked="" id="edu"></label>
-                            </div>
-                            <div class="row-content">
-                                <h4 class="list-group-item-heading">Education</h4>
-                                <p class="list-group-item-text">Schooling and Coursework</p>
-                            </div>
-                        </div>
-                        <div class="list-group-separator"></div>
-                        <div class="list-group-item">
-                            <div class="row-action-primary checkbox checkbox-material-teal">
-                                <label><input type="checkbox" checked="" id="exp"></label>
-                            </div>
-                            <div class="row-content">
-                                <h4 class="list-group-item-heading">Experience</h4>
-                                <p class="list-group-item-text">Work, Internships, and Volunteering</p>
-                            </div>
-                        </div>
-                        <div class="list-group-separator"></div>
-                        <div class="list-group-item">
-                            <div class="row-action-primary checkbox checkbox-material-teal">
-                                <label><input type="checkbox" checked="" id="exc"></label>
-                            </div>
-                            <div class="row-content">
-                                <h4 class="list-group-item-heading">Extracurricular</h4>
-                                <p class="list-group-item-text">Out-of-class projects and club involvement</p>
-                            </div>
-                        </div>
-                        <div class="list-group-separator"></div>
+                        <a href="#" class="list-group-item">
+                            <h3 class="list-group-item-heading">Thales Avionics - Innovations</h3>
+                            <h4 class="list-group-item-text"><i> Mechanical Engineering Intern (Jun - Sep 2015) </i> </h4>
+                            <ul>
+                                <li>Mechanism design</li>
+                                <li>Innovative packaging and design work</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h3 class="list-group-item-heading">UCLA Engineering Tech Camp</h3>
+                            <h4 class="list-group-item-text"><i> Instructor & Technical Manager (Jun - Aug 2014) </i> </h4>
+                            <ul>
+                                <li>Taught and mentored 14 high-school students through a 4-week hands-on robotics engineering project.</li>
+                                <li>Designed prototypes in Solidworks, and machined stock 6061 aluminum to .005" tolerance.</li>
+                                <li>Assembled robots and debugged all radio and wired communication issues. </li>
+                                <li> Developed curriculum & daily lesson plan content, as well as administered all technical instruction.</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h3 class="list-group-item-heading">Bed|Stu</h3>
+                            <h4 class="list-group-item-text"><i> Product Development Intern (Aug - Sep 2013) </i> </h4>
+                            <ul>
+                                <li>Advised the company CEO on 3-D drawing techniques and software platforms specific to the shoe industry.</li>
+                                <li>Created and shipped specific development packages for international sales representatives.</li>
+                                <li>Managed and organized sales and development samples over the entire 2014 product line.</li>
+                                <li>Prepared samples and marketing paperwork for the PROJECT Las Vegas Trade Show.</li>
+                            </ul>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xs-9">
-                <div class="panel panel-default shadow-z-2" id="education">
-                    <div class="panel-heading"><h2>Education</h2></div>
-                    <div class="panel-body"><h3>UCLA School of Engineering</h3>
-                        <h4>Bachelor of Science in Mechanical Engineering (4<sup>th</sup> yr)</h4>
-                        <h2>Relevant Coursework</h2>
-                        <ul>
-                            <li>Statics & Strength of Materials</li>
-                            <li>Dynamics of Rigid Bodies</li>
-                            <li>Fluid Dynamics</li>
-                            <li>Thermodynamics & Heat Transfer</li>
-                            <li>Computer Science (C++)</li>
-                            <li>Feedback & Control</li>
-                            <li>Electrical Circuits & Analysis</li>
-                            <li>Analysis of Dynamic Systems</li>
-                        </ul>
+            <div class="panel panel-default shadow-z-2" id="extracurricular">
+                <div class="panel-heading">
+                <h2>Projects & Involvement</h2> </div>
+                <div class="panel-body">
+                    <div class="list-group">
+                        <a class="list-group-item">
+                            <h3 class="list-group-item-heading">Thales Arduino Challenge</h3>
+                            <h4 class="list-group-item-text">Lead Developer</h4>
+                            <ul>
+                                <li>Created a bio-reactive audio-visual and cabin climate controller for in-flight entertainment systems.</li>
+                                <li>Awarded by Thales as a Top 5 project, of 20+ projects from 4 California Universities.</li>
+                                <li>Used OpenCV, Arduino, and Python for face detection, light control, serial communication, and audio-visual adjustments.</li>
+                                <li>Successfully demonstrated project to Thales executives and engineers.</li>
+                            </ul>
+                        </a>
+                        <a class="list-group-item">
+                            <h3 class="list-group-item-heading">ASME Battlebots</h3>
+                            <h4 class="list-group-item-text">External Vice President</h4>
+                            <ul>
+                                <li>Successfully organized and coordinated of UCLA’s first ever Mechanical Engineering-specific career fair.</li>
+                                <li>Holding full authority over group project funding, as well as industry, alumni, and department relations.</li>
+                                <li>Creating and presenting Solidworks CAD lessons to classes of 25+ incoming engineering students. </li>
+                            </ul>
+                        </a>
+                        <a class="list-group-item">
+                            <h3 class="list-group-item-heading">Arduino LED SuperController Project</h3>
+                            <h4 class="list-group-item-text">Chief Engineer & Designer</h4>
+                            <ul>
+                                <li>Brainstormed, designed, prototyped, built, debugged, and completed an Arduino-based device for precision LED Control.</li>
+                                <li>Employed N-Channel MOSFET power transistors and Pulse Width Modulation in combination to adjust color brightness.</li>
+                                <li>Programmed Arduino to perform fft on electret microphone input, making the LEDs audio-reactive and bass sensitive.</li>
+                                <li>Shipped a custom UI, using an RGB backlit LCD screen with LiquidCrystal library for the dynamic display.</li>
+                                <li>Utilized potentiometers and a modified 5-way navigational switch to permit user input to the SuperController.</li>
+                            </ul>
+                        </a>
+                        <a class="list-group-item">
+                            <h3 class="list-group-item-heading">Ecochella Pedal Power Generation Project</h3>
+                            <h4 class="list-group-item-text">Project Lead & Manager</h4>
+                            <ul>
+                                <li>Created and led 3-man engineering team that created a human powered energy-generating bicycle.</li>
+                                <li>Led team through 3 rounds of proposals, to become 1 of 7 teams to be allocated resources of an original 25.</li>
+                                <li>Designed, built, soldered, and performed extensive debugging on the power circuit.</li>
+                                <li>Engineered and implemented belt-driven powertrain, creating a useable 100 Watts at 25 Volts.</li>
+                            </ul>
+                        </a>
                     </div>
-                </div>
-                <div class="panel panel-default shadow-z-2" id="experience">
-                    <div class="panel-heading">
-                    <h2>Work Experience</h2></div>
-                    <div class="panel-body">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item">
-                                <h3 class="list-group-item-heading">Thales Avionics - Innovations</h3>
-                                <h4 class="list-group-item-text"><i> Mechanical Engineering Intern (Jun - Sep 2015) </i> </h4>
-                                <ul>
-                                    <li>Mechanism design</li>
-                                    <li>Innovative packaging and design work</li>
-                                </ul>
-                            </a>
-                            <a href="#" class="list-group-item">
-                                <h3 class="list-group-item-heading">UCLA Engineering Tech Camp</h3>
-                                <h4 class="list-group-item-text"><i> Instructor & Technical Manager (Jun - Aug 2014) </i> </h4>
-                                <ul>
-                                    <li>Taught and mentored 14 high-school students through a 4-week hands-on robotics engineering project.</li>
-                                    <li>Designed prototypes in Solidworks, and machined stock 6061 aluminum to .005" tolerance.</li>
-                                    <li>Assembled robots and debugged all radio and wired communication issues. </li>
-                                    <li> Developed curriculum & daily lesson plan content, as well as administered all technical instruction.</li>
-                                </ul>
-                            </a>
-                            <a href="#" class="list-group-item">
-                                <h3 class="list-group-item-heading">Bed|Stu</h3>
-                                <h4 class="list-group-item-text"><i> Product Development Intern (Aug - Sep 2013) </i> </h4>
-                                <ul>
-                                    <li>Advised the company CEO on 3-D drawing techniques and software platforms specific to the shoe industry.</li>
-                                    <li>Created and shipped specific development packages for international sales representatives.</li>
-                                    <li>Managed and organized sales and development samples over the entire 2014 product line.</li>
-                                    <li>Prepared samples and marketing paperwork for the PROJECT Las Vegas Trade Show.</li>
-                                </ul>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default shadow-z-2" id="extracurricular">
-                    <div class="panel-heading">
-                    <h2>Projects & Involvement</h2> </div>
-                    <div class="panel-body">
-                        <div class="list-group">
-                            <a class="list-group-item">
-                                <h3 class="list-group-item-heading">Thales Arduino Challenge</h3>
-                                <h4 class="list-group-item-text">Lead Developer</h4>
-                                <ul>
-                                    <li>Created a bio-reactive audio-visual and cabin climate controller for in-flight entertainment systems.</li>
-                                    <li>Awarded by Thales as a Top 5 project, of 20+ projects from 4 California Universities.</li>
-                                    <li>Used OpenCV, Arduino, and Python for face detection, light control, serial communication, and audio-visual adjustments.</li>
-                                    <li>Successfully demonstrated project to Thales executives and engineers.</li>
-                                </ul>
-                            </a>
-                            <a class="list-group-item">
-                                <h3 class="list-group-item-heading">ASME Battlebots</h3>
-                                <h4 class="list-group-item-text">External Vice President</h4>
-                                <ul>
-                                    <li>Successfully organized and coordinated of UCLA’s first ever Mechanical Engineering-specific career fair.</li>
-                                    <li>Holding full authority over group project funding, as well as industry, alumni, and department relations.</li>
-                                    <li>Creating and presenting Solidworks CAD lessons to classes of 25+ incoming engineering students. </li>
-                                </ul>
-                            </a>
-                            <a class="list-group-item">
-                                <h3 class="list-group-item-heading">Arduino LED SuperController Project</h3>
-                                <h4 class="list-group-item-text">Chief Engineer & Designer</h4>
-                                <ul>
-                                    <li>Brainstormed, designed, prototyped, built, debugged, and completed an Arduino-based device for precision LED Control.</li>
-                                    <li>Employed N-Channel MOSFET power transistors and Pulse Width Modulation in combination to adjust color brightness.</li>
-                                    <li>Programmed Arduino to perform fft on electret microphone input, making the LEDs audio-reactive and bass sensitive.</li>
-                                    <li>Shipped a custom UI, using an RGB backlit LCD screen with LiquidCrystal library for the dynamic display.</li>
-                                    <li>Utilized potentiometers and a modified 5-way navigational switch to permit user input to the SuperController.</li>
-                                </ul>
-                            </a>
-                            <a class="list-group-item">
-                                <h3 class="list-group-item-heading">Ecochella Pedal Power Generation Project</h3>
-                                <h4 class="list-group-item-text">Project Lead & Manager</h4>
-                                <ul>
-                                    <li>Created and led 3-man engineering team that created a human powered energy-generating bicycle.</li>
-                                    <li>Led team through 3 rounds of proposals, to become 1 of 7 teams to be allocated resources of an original 25.</li>
-                                    <li>Designed, built, soldered, and performed extensive debugging on the power circuit.</li>
-                                    <li>Engineered and implemented belt-driven powertrain, creating a useable 100 Watts at 25 Volts.</li>
-                                </ul>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-3" id="skills">
-                <div class="matcard">
-                    <h2>Skills</h2>
-                    <h4>Software</h4>
-                    <ul>
-                        <li>Experienced</li>
-                        <ul>
-                            <li>Solidworks CAD</li>
-                            <li>Git</li>
-                            <li>MATLAB</li>
-                            <li>Visual Studio</li>
-                        </ul>
-                        <li>Familiar</li>
-                        <ul>
-                            <li>Simulink</li>
-                            <li>Vim</li>
-                        </ul>
-                    </ul>
-                    <h4>Programming</h4>
-                    <ul>
-                        <li>5000+ lines</li>
-                        <ul>
-                            <li>C/C++</li>
-                            <li>MATLAB</li>
-                            <li>LaTeX</li>
-                        </ul>
-                        <li>2000+ Lines</li>
-                        <ul>
-                            <li>Python</li>
-                            <li>Arduino</li>
-                            <li>HTML</li>
-                        </ul>
-                        <li>Familiar</li>
-                        <ul>
-                            <li>Android</li>
-                            <li>CSS</li>
-                            <li>Bash</li>
-                        </ul>
-                    </ul>
-                    <h4>Hands-on</h4>
-                    <ul>
-                        <li>Tangible</li>
-                        <ul>
-                            <li>Soldering</li>
-                            <li>Manual Mill</li>
-                            <li>Lathe</li>
-                            <li>Drill Press</li>
-                            <li>CNC Mill</li>
-                        </ul>
-                        <li>Familiar</li>
-                        <ul>
-                            <li>Circuit Design</li>
-                            <li>Mechanical Design</li>
-                        </ul>
-                    </ul>
                 </div>
             </div>
         </div>
-        
-        
-        <script src="external/jquery/jquery.js"></script>
-        <script src="jquery-ui.min.js"></script>
-        <script src="js/ripples.min.js"></script>
-        <script src="js/material.min.js"></script>
-        
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <script src="js/mine.js"></script>
-    </body>
+        <div class="col-xs-3" id="skills">
+            <div class="matcard">
+                <h2>Skills</h2>
+                <h4>Software</h4>
+                <ul>
+                    <li>Experienced</li>
+                    <ul>
+                        <li>Solidworks CAD</li>
+                        <li>Git</li>
+                        <li>MATLAB</li>
+                        <li>Visual Studio</li>
+                    </ul>
+                    <li>Familiar</li>
+                    <ul>
+                        <li>Simulink</li>
+                        <li>Vim</li>
+                    </ul>
+                </ul>
+                <h4>Programming</h4>
+                <ul>
+                    <li>5000+ lines</li>
+                    <ul>
+                        <li>C/C++</li>
+                        <li>MATLAB</li>
+                        <li>LaTeX</li>
+                    </ul>
+                    <li>2000+ Lines</li>
+                    <ul>
+                        <li>Python</li>
+                        <li>Arduino</li>
+                        <li>HTML</li>
+                    </ul>
+                    <li>Familiar</li>
+                    <ul>
+                        <li>Android</li>
+                        <li>CSS</li>
+                        <li>Bash</li>
+                    </ul>
+                </ul>
+                <h4>Hands-on</h4>
+                <ul>
+                    <li>Tangible</li>
+                    <ul>
+                        <li>Soldering</li>
+                        <li>Manual Mill</li>
+                        <li>Lathe</li>
+                        <li>Drill Press</li>
+                        <li>CNC Mill</li>
+                    </ul>
+                    <li>Familiar</li>
+                    <ul>
+                        <li>Circuit Design</li>
+                        <li>Mechanical Design</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="js/ripples.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/mine.js"></script>
+</body>
 </html>
 <!--
 Credits: https://github.com/FezVrasta/bootstrap-material-design
