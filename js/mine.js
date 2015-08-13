@@ -8,14 +8,18 @@ $(document).ready(function() {
         $('.all').toggleClass('active');
     });
     $("[data-toggle=popover]").popover();
+    /*
     var eduheight = $('#education').height();
     var expheight = $('#experience').height();
     var excheight = $('#extracurricular').height();
-
+    */
     $("#edu").click(function(){
         var tempheight = $('#education').height();
         if(tempheight==0){
-        $('#education').animate({height:eduheight,marginBottom:"+=20px"});
+            var curHeight = $('#education').height();
+            $('#education').css('height', 'auto');
+            var autoHeight = $('#education').height(); 
+            $('#education').height(curHeight).animate({height:autoHeight,marginBottom:"+=20px"});
         }
         else{
             $('#education').animate({height:0,marginBottom:"-=20px"});
@@ -24,8 +28,10 @@ $(document).ready(function() {
     $("#exp").click(function(){
         var tempheight = $('#experience').height();
         if(tempheight==0){
-        $('#experience').animate({height:expheight,marginBottom:"+=20px"});
-       
+            var curHeight = $('#experience').height();
+            $('#experience').css('height', 'auto');
+            var autoHeight = $('#experience').height(); 
+            $('#experience').height(curHeight).animate({height:autoHeight,marginBottom:"+=20px"});
         }
         else{
             $('#experience').animate({height:0,marginBottom:"-=20px"});
@@ -34,7 +40,10 @@ $(document).ready(function() {
     $("#exc").click(function(){
         var tempheight = $('#extracurricular').height();
         if(tempheight==0){
-        $('#extracurricular').animate({height:excheight,marginBottom:"+=20px"});
+            var curHeight = $('#extracurricular').height();
+            $('#extracurricular').css('height', 'auto');
+            var autoHeight = $('#extracurricular').height(); 
+            $('#extracurricular').height(curHeight).animate({height:autoHeight,marginBottom:"+=20px"});
         }
         else{
             $('#extracurricular').animate({height:0,marginBottom:"-=20px"});
