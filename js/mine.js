@@ -1,5 +1,11 @@
 $(document).ready(function() {
     var radioCur="resu";
+    $("#abourow").hide();
+    $("#credrow").hide();
+    $("#persrow").hide();
+    $("#pdfrrow").hide();
+    $("#controw").hide();
+
 // This command is used to initialize some elements and make them work properly
     $.material.init();
     $('[data-toggle="offcanvas"]').click(function () {
@@ -47,22 +53,31 @@ $(document).ready(function() {
             $('#extracurricular').animate({height:0,marginBottom:"-=20px"});
         }
     });
+
     $("input[type='radio']").click(function(){
         var radioValue = $("input[name='optionsRadios']:checked").val();
         if(radioCur!=radioValue){
-            console.log("rv: "+radioValue);
+            var temp="#"+radioCur+"row";
+                $(temp).hide();
+            var temp="#"+radioValue+"row";
+                $(temp).show();
             switch(radioValue){
                 case "resu":
-                    //code;
+                    $("#edu").prop("disabled", false);
+                    $("#exc").prop("disabled", false);
+                    $("#exp").prop("disabled", false);
                     break;
                 case "abou":
                 case "cred":
                 case "pers":
                 case "pdfr":
                 case "cont":
+                    $("#edu").prop("disabled", true);
+                    $("#exc").prop("disabled", true);
+                    $("#exp").prop("disabled", true);
+                    $('#resurow').hide();
                     //code;
                     break;
-
                 default:
                     break;
             }

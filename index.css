@@ -26,15 +26,8 @@
 html,
 body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
-
-
+  background: #303030;
 }
-
-body {
-
-  background-color: #303030;
-}
-
 .navbar{
   position: relative;
 
