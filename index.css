@@ -15,7 +15,15 @@
 .matcard{
   width:auto;
   background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+
 }
+#masterrow{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .row{
   background-color: #303030;
 }
