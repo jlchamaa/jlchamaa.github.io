@@ -18,18 +18,23 @@ $(document).ready(function() {
     $("[data-toggle=popover]").popover();
 
     $("#learnmore").click(function(){
-        var curHeight = $('.jumbotron').height();
+        var curHeight1 = $('.jumbotron').height();
         $('#jumbospacing').hide();
         $('.jumbotron').css('height', 'auto');
-        var autoHeight = $('.jumbotron').height(); 
-        $('.jumbotron').height(curHeight).animate({height:autoHeight});
+        var autoHeight1 = $('.jumbotron').height(); 
+        
 
         $('#masterrow').css('height','0px');
-        var curHeight = $('#masterrow').height();
+        var curHeight2 = $('#masterrow').height();
         $('#masterrow').show();
         $('#masterrow').css('height', 'auto');
-        var autoHeight = $('#masterrow').height(); 
-        $('#masterrow').height(curHeight).animate({height:autoHeight});
+        var autoHeight2 = $('#masterrow').height(); 
+
+            $('.jumbotron').height(curHeight1).animate({height:autoHeight1});
+            $('#masterrow').height(curHeight2).animate({height:autoHeight2});
+        
+        
+        
 
         $("#learnmore").hide();
         $("#author").show();
