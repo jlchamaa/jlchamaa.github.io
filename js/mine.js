@@ -1,10 +1,12 @@
 $(document).ready(function() {
     var radioCur="resu";
+    $("#masterrow").hide();
+    $("#author").hide();
     $("#abourow").hide();
     $("#credrow").hide();
     $("#persrow").hide();
     $("#pdfrrow").hide();
-    $("#controw").hide();
+    $("#getirow").hide();
 
 // This command is used to initialize some elements and make them work properly
     $.material.init();
@@ -14,6 +16,25 @@ $(document).ready(function() {
         $('.all').toggleClass('active');
     });
     $("[data-toggle=popover]").popover();
+
+    $("#learnmore").click(function(){
+        var curHeight = $('.jumbotron').height();
+        $('#jumbospacing').hide();
+        $('.jumbotron').css('height', 'auto');
+        var autoHeight = $('.jumbotron').height(); 
+        $('.jumbotron').height(curHeight).animate({height:autoHeight});
+
+        $('#masterrow').css('height','0px');
+        var curHeight = $('#masterrow').height();
+        $('#masterrow').show();
+        $('#masterrow').css('height', 'auto');
+        var autoHeight = $('#masterrow').height(); 
+        $('#masterrow').height(curHeight).animate({height:autoHeight});
+
+        $("#learnmore").hide();
+        $("#author").show();
+
+    });
 
     $("#edu").click(function(){
         var tempheight = $('#education').height();
@@ -71,7 +92,7 @@ $(document).ready(function() {
                 case "cred":
                 case "pers":
                 case "pdfr":
-                case "cont":
+                case "geti":
                     $("#edu").prop("disabled", true);
                     $("#exc").prop("disabled", true);
                     $("#exp").prop("disabled", true);
