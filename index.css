@@ -41,16 +41,20 @@ body {
   position: relative;
 
 }
-.toggleholder{
-  position: absolute;
-  bottom:0;
-}
 
 .jumbotron {
-  background-image:  url('images/griffith.jpg');
+  background:  
+    linear-gradient(
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.2)
+    ),
+    url('images/griffith.jpg');
   background-size:   cover;
   background-repeat: no-repeat;
   background-position: right top;
+
+  overflow: hidden;
+  word-wrap: break-word;
   text-align: center;
   z-index: 2;
   margin-left: 15px;
@@ -93,10 +97,23 @@ body {
   .togglebutton{
     z-index:3;
   }
-  /*
-  .all.active{
-    overflow: hidden;
+  .jumbotron {
+  background:  
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('images/griffith.jpg');
+    background-size:   cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  overflow: hidden;
+  word-wrap: break-word;
+  text-align: center;
+  z-index: 2;
+  margin-left: 15px;
+  margin-right: 15px;
   }
-  */
   
 }

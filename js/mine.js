@@ -30,7 +30,7 @@ $(document).ready(function() {
         $('#masterrow').css('height', 'auto');
         var autoHeight2 = $('#masterrow').height(); 
 
-            $('.jumbotron').height(curHeight1).animate({height:autoHeight1});
+            $('.jumbotron').height(curHeight1).animate({height:autoHeight1+10} );
             $('#masterrow').height(curHeight2).animate({height:autoHeight2});
         
         
@@ -89,20 +89,46 @@ $(document).ready(function() {
                 $(temp).show();
             switch(radioValue){
                 case "resu":
+                    $('#quote').text("\"One man's 'magic' is another man's engineering.\"");
+                    $('#author').text("- Robert Heinlein");
                     $("#edu").prop("disabled", false);
                     $("#exc").prop("disabled", false);
                     $("#exp").prop("disabled", false);
                     break;
                 case "abou":
+                    $('#quote').text("\"One man's 'magic' is another man's engineering.\"");
+                    $('#author').text("- Robert Heinlein");
+                    $("#edu").prop("disabled", true);
+                    $("#exc").prop("disabled", true);
+                    $("#exp").prop("disabled", true);    
+                    break;
                 case "cred":
-                case "pers":
-                case "pdfr":
-                case "geti":
+                    $('#quote').text("\"One man's 'magic' is another man's engineering.\"");
+                    $('#author').text("- Robert Heinlein");
                     $("#edu").prop("disabled", true);
                     $("#exc").prop("disabled", true);
                     $("#exp").prop("disabled", true);
-                    $('#resurow').hide();
-                    //code;
+                    break;
+                case "pers":
+                    $('#quote').text("\"One man's 'magic' is another man's engineering.\"");
+                    $('#author').text("- Robert Heinlein");
+                    $("#edu").prop("disabled", true);
+                    $("#exc").prop("disabled", true);
+                    $("#exp").prop("disabled", true);
+                    break;
+                case "pdfr":
+                    $('#quote').text("\"Innovation distinguishes between a leader and a follower.\"");
+                    $('#author').text("- Steve Jobs");
+                    $("#edu").prop("disabled", true);
+                    $("#exc").prop("disabled", true);
+                    $("#exp").prop("disabled", true);
+                    break;
+                case "geti":
+                    $('#quote').text("\"One man's 'magic' is another man's engineering.\"");
+                    $('#author').text("- Robert Heinlein");
+                    $("#edu").prop("disabled", true);
+                    $("#exc").prop("disabled", true);
+                    $("#exp").prop("disabled", true);
                     break;
                 default:
                     break;
