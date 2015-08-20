@@ -38,8 +38,8 @@ body {
 .jumbotron {
   background:  
     linear-gradient(
-      rgba(0, 0, 0, 0.2), 
-      rgba(0, 0, 0, 0.2)
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
     ),
     url('images/griffith.jpg');
   background-size:   cover;
@@ -52,13 +52,19 @@ body {
   z-index: 2;
   margin-left: 15px;
   margin-right: 15px;
+  position: relative;
 }
-.btn.btn-fab {
-  margin: 10px;
-  padding: 15px;
-  font-size: 26px;
-  width: 60px;
-  height: 60px;
+#menubutton{
+  position: absolute;
+  bottom:10px;
+  left:10px;
+}
+@media screen and (min-width: 991px) {
+
+  #buttongroupheight{
+    display: flex;
+    align-items:center;
+  }
 }
 
 /*
@@ -99,8 +105,8 @@ body {
   .jumbotron {
   background:  
     linear-gradient(
-      rgba(0, 0, 0, 0.5), 
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
     ),
     url('images/griffith.jpg');
     background-size:   cover;

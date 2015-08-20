@@ -21,12 +21,12 @@ function buttonsizer(){
 $(document).ready(function() {
     var radioCur="resu";
     $("#masterrow").hide();
-    $("#author").hide();
     $("#abourow").hide();
     $("#credrow").hide();
     $("#persrow").hide();
     $("#pdfrrow").hide();
     $("#getirow").hide();
+    $("#menubutton").hide();
     buttonsizer();
     $( window ).resize(buttonsizer);
 
@@ -42,7 +42,7 @@ $(document).ready(function() {
 
     $("#learnmore").click(function(){
         var curHeight1 = $('.jumbotron').height();
-        $('#jumbospacing').hide();
+        
         $('.jumbotron').css('height', 'auto');
         var autoHeight1 = $('.jumbotron').height(); 
         
@@ -52,15 +52,11 @@ $(document).ready(function() {
         $('#masterrow').show();
         $('#masterrow').css('height', 'auto');
         var autoHeight2 = $('#masterrow').height(); 
-
-            $('.jumbotron').height(curHeight1).animate({height:autoHeight1+10} );
-            $('#masterrow').height(curHeight2).animate({height:autoHeight2});
-        
-        
-        
-
+        $('.jumbotron').height(curHeight1).animate({height:autoHeight1+10} );
+        $('#masterrow').height(curHeight2).animate({height:autoHeight2});
         $("#learnmore").hide();
-        $("#author").show();
+        $('#jumbospacing').hide();
+        $("#menubutton").show();
 
     });
 
