@@ -16,41 +16,33 @@
     </head>
     
     <body>
-        <div class="container-fluid">
-            <section id="header">
-                <div class="navbar navbar-material-indigo navbar-default">
-                    
-                    <div class="container col-md-8  col-xs-12">
-                        <h1 class="text-center">Jean-Luc Chamaa</h1>
-                        <h4 class="text-center"><i>Mechanical Engineering Student</i> at UCLA</h4>
-                    </div>
-                    <div class="text-center col-md-4  visible-md visible-lg">
-                        <div class="btn-group btn-group-justified">
-                            <a class="btn btn-primary btn-raised btn-material-teal flaticon-envelope3" ></a>
-                            <a href="https://www.linkedin.com/in/jlchamaa" target="_blank" class="btn btn-primary btn-raised btn-material-teal flaticon-linked2"></a>
-                            <a href="https://github.com/jeanlucchamaa" target="_blank" class="btn btn-primary btn-raised btn-material-teal flaticon-github7"></a>
-                        </div>
-                        <div class="btn-group btn-group-justified">
-                            <a class="btn btn-primary btn-raised btn-material-teal flaticon-mobile26"></a>
-                            <a href="https://www.facebook.com/jeanlucchamaa" target="_blank" class="btn btn-primary btn-raised btn-material-teal flaticon-facebook23"></a>
-                            <a href="https://instagram.com/jlchamaa/" target="_blank" class="btn btn-primary btn-raised btn-material-teal flaticon-instagram2"></a>
-                        </div>
-                    </div>
-                    <div class="col-xs-1 hidden-md hidden-lg text-center toggleholder">
-                        <a class="togglebutton btn btn-primary btn-sm" data-toggle="offcanvas"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-                    </div>
+        
+        <div  style="color:white;" class="jumbotron">
+            <div class="row" id="buttongroupheight">
+                <div class="col-md-6  col-xs-12">
+                    <h1 class="text-center">Jean-Luc Chamaa</h1>
+                    <h4 class="text-center"><i>Mechanical Engineering Student</i> at UCLA</h4>
                 </div>
-            </section>
-        </div>
-        <div class="jumbotron">
-            <h2 style="color:white;" id="quote">"One man's 'magic' is another man's engineering."</h2>
-            <h4 style="color:white;" id="author">- Robert Heinlein</h4>
-            <div id="jumbospacing">
-            <p>&nbsp</p>
-            <p>&nbsp</p>
-            <p>&nbsp</p>
+                <div class="text-center col-md-6  visible-md visible-lg" id="buttongroupwidth">
+                        <a class="btn btn-primary btn-raised btn-fab mdi-actiongrade btn-material-teal flaticon-envelope3" ></a>
+                        <a href="https://www.linkedin.com/in/jlchamaa" target="_blank" class="btn btn-primary btn-raised btn-fab mdi-actiongrade btn-material-teal flaticon-linked2"></a>
+                        <a href="https://github.com/jeanlucchamaa" target="_blank" class="btn btn-primary btn-raised btn-fab mdi-actiongrade btn-material-teal flaticon-github7"></a>
+                        <a class="btn btn-primary btn-raised btn-fab mdi-actiongrade btn-material-teal flaticon-mobile26"></a>
+                        <a href="https://www.facebook.com/jeanlucchamaa" target="_blank" class="btn btn-primary btn-raised btn-fab mdi-actiongrade btn-material-teal flaticon-facebook23"></a>
+                        <a href="https://instagram.com/jlchamaa/" target="_blank" class="btn btn-primary btn-raised btn-fab mdi-actiongrade btn-material-teal flaticon-instagram2"></a>
+                </div>
             </div>
-            <p><a class="btn btn-primary btn-lg" role="button" id="learnmore">Learn more</a></p>     
+            <div class="col-xs-1 hidden-md hidden-lg text-center toggleholder">
+                <a class="togglebutton btn btn-primary btn-sm" data-toggle="offcanvas"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+            </div>
+            <h2 id="quote">"One man's 'magic' is another man's engineering."</h2>
+            <h4 id="author">- Robert Heinlein</h4>
+            <div id="jumbospacing">
+                <p>&nbsp</p>
+                <p>&nbsp</p>
+                <p>&nbsp</p>
+            </div>
+            <p><a class="btn btn-primary btn-lg" role="button" id="learnmore">Learn more</a></p>
         </div>
         <div class="row" id="masterrow">
             <div class="col-md-3 col-xs-0 row-offcanvas" id="sidebar">
@@ -322,8 +314,6 @@
                 </div>
             </div>
         </div>
-
-
         <script src="external/jquery/jquery.js"></script>
         <script src="jquery-ui.min.js"></script>
         <script src="js/ripples.min.js"></script>

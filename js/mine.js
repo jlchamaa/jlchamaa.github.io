@@ -1,3 +1,23 @@
+function buttonsizer(){
+        var ratio = (($("#buttongroupwidth").width()-30) / $("#buttongroupheight").height());
+        console.log("ratio",ratio);
+        if(ratio>(6.857)){
+            // port too wide, match height
+            var scale=$("#buttongroupheight").height()/70;     
+        }
+        else{
+            // port too tall, match width
+            var scale=($("#buttongroupwidth").width()-30)/480;  
+
+        }
+            $( ".btn.btn-fab" ).css( "margin", 10*scale); 
+            $( ".btn.btn-fab" ).css( "padding",15*scale);  
+            $( ".btn.btn-fab" ).css( "width", 60*scale); 
+            $( ".btn.btn-fab" ).css( "height", 60*scale);
+            $( ".btn.btn-fab" ).css( "font-size", 30*scale);
+    }
+
+
 $(document).ready(function() {
     var radioCur="resu";
     $("#masterrow").hide();
@@ -7,6 +27,9 @@ $(document).ready(function() {
     $("#persrow").hide();
     $("#pdfrrow").hide();
     $("#getirow").hide();
+    buttonsizer();
+    $( window ).resize(buttonsizer);
+
 
 // This command is used to initialize some elements and make them work properly
     $.material.init();
