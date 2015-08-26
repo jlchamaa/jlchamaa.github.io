@@ -1,21 +1,29 @@
 function buttonsizer(){
-        var ratio = (($("#buttongroupwidth").width()-30) / $("#buttongroupheight").height());
-        console.log("ratio",ratio);
-        if(ratio>(6.857)){
-            // port too wide, match height
-            var scale=$("#buttongroupheight").height()/70;     
-        }
-        else{
-            // port too tall, match width
-            var scale=($("#buttongroupwidth").width()-30)/480;  
-
-        }
-            $( ".btn.btn-fab" ).css( "margin", 10*scale); 
-            $( ".btn.btn-fab" ).css( "padding",15*scale);  
-            $( ".btn.btn-fab" ).css( "width", 60*scale); 
-            $( ".btn.btn-fab" ).css( "height", 60*scale);
-            $( ".btn.btn-fab" ).css( "font-size", 30*scale);
+    var ratio = (($("#buttongroupwidth").width()-30) / $("#buttongroupheight").height());
+    console.log("ratio",ratio);
+    if(ratio>(6.857)){
+        // port too wide, match height
+        var scale=$("#buttongroupheight").height()/70;     
     }
+    else{
+        // port too tall, match width
+        var scale=($("#buttongroupwidth").width()-30)/480;  
+
+    }
+        $( ".btn.btn-fab" ).css( "margin", 10*scale); 
+        $( ".btn.btn-fab" ).css( "padding",15*scale);  
+        $( ".btn.btn-fab" ).css( "width", 60*scale); 
+        $( ".btn.btn-fab" ).css( "height", 60*scale);
+        $( ".btn.btn-fab" ).css( "font-size", 30*scale);
+    }
+
+/* Function to animate height: auto */
+function autoHeightAnimate(element, time){
+    var curHeight = element.height(), // Get Default Height
+        autoHeight = element.css('height', 'auto').outerHeight(); // Get Auto Height
+          element.outerHeight(curHeight); // Reset to Default Height
+          element.stop().animate({ height: autoHeight }, parseInt(time)); // Animate to Auto Height
+}
 
 
 $(document).ready(function() {
@@ -27,8 +35,11 @@ $(document).ready(function() {
     $("#pdfrrow").hide();
     $("#getirow").hide();
     $("#menubutton").hide();
+    $("#quotenew").hide();
+    
     buttonsizer();
     $( window ).resize(buttonsizer);
+
 
 
 // This command is used to initialize some elements and make them work properly
@@ -41,22 +52,21 @@ $(document).ready(function() {
     $("[data-toggle=popover]").popover();
 
     $("#learnmore").click(function(){
-        var curHeight1 = $('.jumbotron').height();
+        var curHeight = $('.jumbotron').outerHeight();
+        $('.jumbotron').css('height', curHeight);
+        $('.tofadeonclick, #quotenew').toggle("fade",250);
         
-        $('.jumbotron').css('height', 'auto');
-        var autoHeight1 = $('.jumbotron').height(); 
-        
+        setTimeout(function(){ 
+            var jumbo = $('.jumbotron');
+            autoHeightAnimate(jumbo,1000);
+            var master = $('#masterrow');
+            $("#masterrow").show("blind", 2500 );
+            autoHeightAnimate(master,1000);
+        }, 300);
+        setTimeout(function(){ 
+          autoHeight = $(".jumbotron").css('height', '100%');
+        }, 2000);
 
-        $('#masterrow').css('height','0px');
-        var curHeight2 = $('#masterrow').height();
-        $('#masterrow').show();
-        $('#masterrow').css('height', 'auto');
-        var autoHeight2 = $('#masterrow').height(); 
-        $('.jumbotron').height(curHeight1).animate({height:autoHeight1+10} );
-        $('#masterrow').height(curHeight2).animate({height:autoHeight2});
-        $("#learnmore").hide();
-        $('#jumbospacing').hide();
-        $("#menubutton").show();
 
     });
 
