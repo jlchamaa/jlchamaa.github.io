@@ -35,7 +35,6 @@ $(document).ready(function() {
     $("#pdfrrow").hide();
     $("#getirow").hide();
     $("#menubutton").hide();
-    $("#quotenew").hide();
     
     buttonsizer();
     $( window ).resize(buttonsizer);
@@ -54,15 +53,15 @@ $(document).ready(function() {
     $("#learnmore").click(function(){
         var curHeight = $('.jumbotron').outerHeight();
         $('.jumbotron').css('height', curHeight);
-        $('.tofadeonclick, #quotenew').toggle("fade",250);
+        $('.tofadeonclick').toggle("fade",250);
         
         setTimeout(function(){ 
             var jumbo = $('.jumbotron');
             autoHeightAnimate(jumbo,1000);
             var master = $('#masterrow');
-            $("#masterrow").show("blind", 2500 );
+            $("#masterrow").show("blind", 3000 );
             autoHeightAnimate(master,1000);
-        }, 300);
+        }, 250);
         setTimeout(function(){ 
           autoHeight = $(".jumbotron").css('height', '100%');
         }, 2000);
