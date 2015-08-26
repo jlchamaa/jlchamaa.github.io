@@ -53,7 +53,7 @@ $(document).ready(function() {
     $("#learnmore").click(function(){
         var curHeight = $('.jumbotron').outerHeight();
         $('.jumbotron').css('height', curHeight);
-        $('.tofadeonclick').toggle("fade",250);
+        $('.tofadeonclick, #menubutton').toggle("fade",250);
         
         setTimeout(function(){ 
             var jumbo = $('.jumbotron');
