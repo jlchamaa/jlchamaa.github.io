@@ -38,7 +38,14 @@ $(document).ready(function() {
     
     buttonsizer();
     $( window ).resize(buttonsizer);
+    $('label.tree-toggler').parent().children('ul.tree').toggle();
 
+    $('label.tree-toggler').click(function () {
+    $(this).parent().children('ul.tree').toggle(300);
+    $(this).children('span').toggleClass('glyphicon-triangle-bottom');
+    $(this).children('span').toggleClass('glyphicon-triangle-right');
+    console.log(this);
+    });
 
 
 // This command is used to initialize some elements and make them work properly
@@ -53,7 +60,7 @@ $(document).ready(function() {
     $("#learnmore").click(function(){
         var curHeight = $('.jumbotron').outerHeight();
         $('.jumbotron').css('height', curHeight);
-        $('.tofadeonclick, #menubutton').toggle("fade",250);
+        $('.tofadeonclick, #menubutton').toggle("fade",200);
         
         setTimeout(function(){ 
             var jumbo = $('.jumbotron');
@@ -61,8 +68,8 @@ $(document).ready(function() {
             var master = $('#masterrow');
             $("#masterrow").show("blind", 3000 );
             autoHeightAnimate(master,1000);
-        }, 250);
-        setTimeout(function(){ 
+        }, 250)
+;        setTimeout(function(){ 
           autoHeight = $(".jumbotron").css('height', '100%');
         }, 2000);
 
