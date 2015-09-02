@@ -73,6 +73,14 @@ body {
 .teal {
     color: teal;
 }
+hr{
+  
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border-top-width: 1px;
+  border-top-color: #ccc;
+  
+}
 
 
 /*

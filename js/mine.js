@@ -44,7 +44,10 @@ $(document).ready(function() {
     $(this).parent().children('ul.tree').toggle(300);
     $(this).children('span').toggleClass('glyphicon-triangle-bottom');
     $(this).children('span').toggleClass('glyphicon-triangle-right');
-    console.log(this);
+    });
+    $('.yellowhighlighter').click(function () {
+    $('.yellowhighlighted').css('background-color','yellow');
+    
     });
 
 
