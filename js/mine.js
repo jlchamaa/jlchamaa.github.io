@@ -24,6 +24,27 @@ function autoHeightAnimate(element, time){
           element.outerHeight(curHeight); // Reset to Default Height
           element.stop().animate({ height: autoHeight }, parseInt(time)); // Animate to Auto Height
 }
+var globalcolorcounter=0;
+var colorpalette=['red', 'yellow', 'blue', 'pink'];
+
+function highlight(element){
+    var newcol= ('5px solid '+colorpalette[globalcolorcounter%4]);
+    $(element).css('border-left', newcol);
+}
+function toggletree(element){ // needs to be passed elements of class .tree-toggler
+    $(element).parent().children('ul.tree').toggle(300);
+    $(element).children('span').toggleClass('glyphicon-triangle-bottom');
+    $(element).children('span').toggleClass('glyphicon-triangle-right');
+}
+function cleanhighlighting(){
+    $('.skillselect').css('border-left','0px solid');
+    $('.skill').css('border-left','0px solid');
+    $('.tree').each(function(i){
+        if($(this).is(":visible")){
+            toggletree($(this).parent().children('label'));
+        }
+    });
+}
 
 
 $(document).ready(function() {
@@ -41,17 +62,11 @@ $(document).ready(function() {
     $('label.tree-toggler').parent().children('ul.tree').toggle();
 
     $('label.tree-toggler').click(function () {
-    $(this).parent().children('ul.tree').toggle(300);
-    $(this).children('span').toggleClass('glyphicon-triangle-bottom');
-    $(this).children('span').toggleClass('glyphicon-triangle-right');
-    });
-    $('.yellowhighlighter').click(function () {
-    $('.yellowhighlighted').css('background-color','yellow');
-    
+        toggletree(this);
     });
 
 
-// This command is used to initialize some elements and make them work properly
+    // This command is used to initialize some elements and make them work properly
     $.material.init();
     $('[data-toggle="offcanvas"]').click(function () {
         $('.row-offcanvas').toggleClass('active');
@@ -60,6 +75,7 @@ $(document).ready(function() {
     });
     $("[data-toggle=popover]").popover();
 
+    //"Learn More" button click
     $("#learnmore").click(function(){
         var curHeight = $('.jumbotron').outerHeight();
         $('.jumbotron').css('height', curHeight);
@@ -75,10 +91,9 @@ $(document).ready(function() {
 ;        setTimeout(function(){ 
           autoHeight = $(".jumbotron").css('height', '100%');
         }, 2000);
-
-
     });
 
+    // collapsing the resume sections on toggle
     $("#edu").click(function(){
         var tempheight = $('#education').height();
         if(tempheight==0){
@@ -118,6 +133,7 @@ $(document).ready(function() {
         }
     });
 
+    // sidebar radio features
     $("input[type='radio']").click(function(){
         var radioValue = $("input[name='optionsRadios']:checked").val();
         if(radioCur!=radioValue){
@@ -175,5 +191,25 @@ $(document).ready(function() {
         radioCur=radioValue;
     });
 
+    // skill selection
+    $(".skillselect").click(function(){
+        cleanhighlighting();
+        var thiselement=$(this);
+        setTimeout(function(){
+            highlight(thiselement);
+            var classList =thiselement.attr('class').split(/\s+/);
+            classList.splice(0,2);
+            $.each(classList, function(index, item){
+                highlight($("#"+item));
+                if($("#"+item).parent().is(":hidden")){
+                    toggletree($("#"+item).parent('.tree').parent().children('.tree-toggler'));
+                }
+            });
+                
+
+        },350);
+        globalcolorcounter+=1;
+    });
+    
 
 });

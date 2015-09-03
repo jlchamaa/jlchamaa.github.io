@@ -81,6 +81,13 @@ hr{
   border-top-color: #ccc;
   
 }
+.tree{
+  cursor: pointer;
+}
+.skillselect{
+  cursor: pointer;
+  border-l
+}
 
 
 /*
