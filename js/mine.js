@@ -20,15 +20,15 @@ function buttonsizer(){
 /* Function to animate height: auto */
 function autoHeightAnimate(element, time){
     var curHeight = element.height(), // Get Default Height
-        autoHeight = element.css('height', 'auto').outerHeight(); // Get Auto Height
-          element.outerHeight(curHeight); // Reset to Default Height
-          element.stop().animate({ height: autoHeight }, parseInt(time)); // Animate to Auto Height
+    autoHeight = element.css('height', 'auto').outerHeight(); // Get Auto Height
+    element.outerHeight(curHeight); // Reset to Default Height
+    element.stop().animate({ height: autoHeight },{duration: parseInt(time), easing:'easeOutQuad'}); // Animate to Auto Height
 }
 var globalcolorcounter=0;
-var colorpalette=['red', 'yellow', 'blue', 'pink'];
+var colorpalette=['#F44336', '#E91E63', '#9C27B0', '#3F51B5','#2196F3','#FFC107','#FF5722'];
 
 function highlight(element){
-    var newcol= ('5px solid '+colorpalette[globalcolorcounter%4]);
+    var newcol= ('5px solid '+colorpalette[globalcolorcounter%7]);
     $(element).css('border-left', newcol);
 }
 function toggletree(element){ // needs to be passed elements of class .tree-toggler
@@ -70,8 +70,10 @@ $(document).ready(function() {
     $.material.init();
     $('[data-toggle="offcanvas"]').click(function () {
         $('.row-offcanvas').toggleClass('active');
-        $('.row').toggleClass('active');
+        $('#masterrow').toggleClass('active');
         $('.all').toggleClass('active');
+        window.dispatchEvent(new Event('resize'));
+        buttonsizer();
     });
     $("[data-toggle=popover]").popover();
 
@@ -83,14 +85,14 @@ $(document).ready(function() {
         
         setTimeout(function(){ 
             var jumbo = $('.jumbotron');
-            autoHeightAnimate(jumbo,1000);
+            autoHeightAnimate(jumbo,2000);
             var master = $('#masterrow');
             $("#masterrow").show("blind", 3000 );
-            autoHeightAnimate(master,1000);
+            //autoHeightAnimate(master,3000);
         }, 250)
 ;        setTimeout(function(){ 
           autoHeight = $(".jumbotron").css('height', '100%');
-        }, 2000);
+        }, 3000);
     });
 
     // collapsing the resume sections on toggle

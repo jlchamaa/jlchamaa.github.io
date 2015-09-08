@@ -15,7 +15,6 @@
 .matcard{
   width:auto;
   background-color: #fff;
-  border-radius: 3px;
   overflow: hidden;
 
 }
@@ -53,21 +52,31 @@ body {
   margin-left: 15px;
   margin-right: 15px;
   position: relative;
+  height: 95vh;
 }
 #menubutton{
   position: absolute;
-  bottom:10px;
-  left:10px;
+  font-size: 8px;
+  bottom:0px;
+  left:3px;
 }
 .panel-heading{
   background-color: #009688 !important;
   color: white !important;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 @media screen and (min-width: 991px) {
 
   #buttongroupheight{
     display: flex;
     align-items:center;
+  }
+}
+@media screen and (max-height: 690px) {
+
+  .jumbotron{
+    height: 660px;
   }
 }
 .teal {
@@ -110,16 +119,15 @@ hr{
     
 
   }
-  .row.active:after {
-    content: "";
+  #masterrow.active:after {
     display: block;
-    position: absolute; /* could also be absolute */ 
+    position: fixed; 
     top: 0;
     left: 0;
-    height: 1000%;
+    height: 100%;
     width: 100%;
     z-index: 1;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.8);
 }
 
   .togglebutton{
