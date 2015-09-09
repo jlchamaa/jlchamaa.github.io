@@ -60,6 +60,11 @@ body {
   bottom:0px;
   left:3px;
 }
+.skill>a{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  font-size: 12px !important;
+}
 .panel-heading{
   background-color: #009688 !important;
   color: white !important;
@@ -96,6 +101,9 @@ hr{
 .skillselect{
   cursor: pointer;
   border-l
+}
+#skill-panel{
+  overflow: auto;
 }
 
 

@@ -1,6 +1,6 @@
 function buttonsizer(){
     var ratio = (($("#buttongroupwidth").width()-30) / $("#buttongroupheight").height());
-    console.log("ratio",ratio);
+    //console.log("ratio",ratio);
     if(ratio>(6.857)){
         // port too wide, match height
         var scale=$("#buttongroupheight").height()/70;     
@@ -25,11 +25,13 @@ function autoHeightAnimate(element, time){
     element.stop().animate({ height: autoHeight },{duration: parseInt(time), easing:'easeOutQuad'}); // Animate to Auto Height
 }
 var globalcolorcounter=0;
+var topset=500;
 var colorpalette=['#F44336', '#E91E63', '#9C27B0', '#3F51B5','#2196F3','#FFC107','#FF5722'];
 
 function highlight(element){
     var newcol= ('5px solid '+colorpalette[globalcolorcounter%7]);
     $(element).css('border-left', newcol);
+    $(element).css('margin-left', '-5px');
 }
 function toggletree(element){ // needs to be passed elements of class .tree-toggler
     $(element).parent().children('ul.tree').toggle(300);
@@ -39,11 +41,15 @@ function toggletree(element){ // needs to be passed elements of class .tree-togg
 function cleanhighlighting(){
     $('.skillselect').css('border-left','0px solid');
     $('.skill').css('border-left','0px solid');
+    $('.skill').css('margin-left','0px');
     $('.tree').each(function(i){
         if($(this).is(":visible")){
             toggletree($(this).parent().children('label'));
         }
     });
+}
+function calculatetopset(){
+    topset = $('#skills').offset().top;
 }
 
 
@@ -56,9 +62,41 @@ $(document).ready(function() {
     $("#pdfrrow").hide();
     $("#getirow").hide();
     $("#menubutton").hide();
-    
+    /*
+    calculatetopset();
+    $( window ).scroll(function() {
+
+        if($('#learnmore').is(":visible")==false){
+            calculatetopset();
+            console.log("topset= ",topset);
+            console.log("scrollTop= ",$(document).scrollTop());
+            
+            if($(document).scrollTop()+15>topset){
+                
+                 $('#skills').css('padding-top',($(document).scrollTop()+15-topset));
+                // $('#skills').css('top', '0px');
+
+                // $('#skills').css('left', leftset); 
+            
+                //console.log($('#skills').offset().left); 
+            }
+            
+        }
+        
+    });
+*/
+
     buttonsizer();
     $( window ).resize(buttonsizer);
+    //keep skills high
+    $(window).on("resize", function(event){
+      calculatetopset();
+
+    });
+    
+
+
+    
     $('label.tree-toggler').parent().children('ul.tree').toggle();
 
     $('label.tree-toggler').click(function () {
@@ -92,7 +130,8 @@ $(document).ready(function() {
         }, 250)
 ;        setTimeout(function(){ 
           autoHeight = $(".jumbotron").css('height', '100%');
-        }, 3000);
+          calculatetopset();
+        }, 4000);
     });
 
     // collapsing the resume sections on toggle
