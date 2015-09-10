@@ -127,6 +127,8 @@ $(document).ready(function() {
 
     // This command is used to initialize some elements and make them work properly
     $.material.init();
+    $("[data-toggle=popover]").popover();
+
     $('[data-toggle="offcanvas"]').click(function () {
         $('.row-offcanvas').toggleClass('active');
         $('#masterrow').toggleClass('active');
@@ -134,8 +136,7 @@ $(document).ready(function() {
         window.dispatchEvent(new Event('resize'));
         buttonsizer();
     });
-    $("[data-toggle=popover]").popover();
-
+    
     //"Learn More" button click
     $("#learnmore").click(function(){
         var curHeight = $('.jumbotron').outerHeight();
@@ -157,41 +158,44 @@ $(document).ready(function() {
 
     // collapsing the resume sections on toggle
     $("#edu").click(function(){
-        var tempheight = $('#education').height();
+        var tempheight = $('#educationcontent').height();
         if(tempheight==0){
-            var curHeight = $('#education').height();
-            $('#education').css('height', 'auto');
-            var autoHeight = $('#education').height(); 
-            $('#education').height(curHeight).animate({height:autoHeight,marginBottom:"+=20px"});
+            $('#educationcontent').animate({padding:"+=15px"},0);
+            var curHeight = $('#educationcontent').height();
+            $('#educationcontent').css('height', 'auto');
+            var autoHeight = $('#educationcontent').height(); 
+            $('#educationcontent').height(curHeight).animate({height:autoHeight});
         }
         else{
-            $('#education').animate({height:0,marginBottom:"-=20px"});
+            $('#educationcontent').animate({height:0,padding:"-=15px"});
         }
     });
 
     $("#exp").click(function(){
-        var tempheight = $('#experience').height();
+        var tempheight = $('#experiencecontent').height();
         if(tempheight==0){
-            var curHeight = $('#experience').height();
-            $('#experience').css('height', 'auto');
-            var autoHeight = $('#experience').height(); 
-            $('#experience').height(curHeight).animate({height:autoHeight,marginBottom:"+=20px"});
+            $('#experiencecontent').animate({padding:"+=15px"},0);
+            var curHeight = $('#experiencecontent').height();
+            $('#experiencecontent').css('height', 'auto');
+            var autoHeight = $('#experiencecontent').height(); 
+            $('#experiencecontent').height(curHeight).animate({height:autoHeight});
         }
         else{
-            $('#experience').animate({height:0,marginBottom:"-=20px"});
+            $('#experiencecontent').animate({height:0,padding:"-=15px"});
         }
     });
 
     $("#exc").click(function(){
-        var tempheight = $('#extracurricular').height();
+        var tempheight = $('#extracurricularcontent').height();
         if(tempheight==0){
-            var curHeight = $('#extracurricular').height();
-            $('#extracurricular').css('height', 'auto');
-            var autoHeight = $('#extracurricular').height(); 
-            $('#extracurricular').height(curHeight).animate({height:autoHeight,marginBottom:"+=20px"});
+            $('#extracurricularcontent').animate({padding:"+=15px"},0);
+            var curHeight = $('#extracurricularcontent').height();
+            $('#extracurricularcontent').css('height', 'auto');
+            var autoHeight = $('#extracurricularcontent').height(); 
+            $('#extracurricularcontent').height(curHeight).animate({height:autoHeight});
         }
         else{
-            $('#extracurricular').animate({height:0,marginBottom:"-=20px"});
+            $('#extracurricularcontent').animate({height:0,padding:"-=15px"});
         }
     });
 
