@@ -25,7 +25,6 @@ function autoHeightAnimate(element, time){
     element.stop().animate({ height: autoHeight },{duration: parseInt(time), easing:'easeOutQuad'}); // Animate to Auto Height
 }
 var globalcolorcounter=0;
-var topset=500;
 var colorpalette=['#F44336', '#E91E63', '#9C27B0', '#3F51B5','#2196F3','#FFC107','#FF5722'];
 
 function highlight(element){
@@ -48,10 +47,37 @@ function cleanhighlighting(){
         }
     });
 }
-function calculatetopset(){
-    topset = $('#skills').offset().top;
+function calculateoffset(){
+    var offsetarr = new Array(0,0,0,0,0);
+    offsetarr[0] = $('#education').offset().top;
+    offsetarr[1] = offsetarr[0] + $('#education').height();
+    offsetarr[2] = $('#experience').offset().top;
+    offsetarr[3] = offsetarr[2] + $('#experience').height();
+    offsetarr[4] = $('#extracurricular').offset().top;
+    //console.log(offsetarr);
+    var yscroll = $(window).scrollTop();
+    
+    if(yscroll > offsetarr[1]-(offsetarr[1]-offsetarr[0])/2){
+        
+        if(yscroll > offsetarr[3]-(offsetarr[3]-offsetarr[2])/2){
+            //$('#skills').css('padding-top',offsetarr[4]-offsetarr[0]);
+            $('#skills').animate({'padding-top':offsetarr[4]-offsetarr[0]},100);
+            console.log("P2");
+            return;
+        } 
+        //$('#skills').css('padding-top',offsetarr[2]-offsetarr[0]);
+        if(yscroll > offsetarr[1]-(offsetarr[1]-offsetarr[0])/2){
+            console.log("P1");
+            $('#skills').animate({'padding-top':offsetarr[2]-offsetarr[0]},100);
+            return;    
+        }
+          
+    }    
+    else{ 
+        $('#skills').animate({'padding-top':0},100);
+        console.log("P0");
+    }
 }
-
 
 $(document).ready(function() {
     var radioCur="resu";
@@ -62,36 +88,15 @@ $(document).ready(function() {
     $("#pdfrrow").hide();
     $("#getirow").hide();
     $("#menubutton").hide();
-    /*
-    calculatetopset();
     $( window ).scroll(function() {
-
-        if($('#learnmore').is(":visible")==false){
-            calculatetopset();
-            console.log("topset= ",topset);
-            console.log("scrollTop= ",$(document).scrollTop());
-            
-            if($(document).scrollTop()+15>topset){
-                
-                 $('#skills').css('padding-top',($(document).scrollTop()+15-topset));
-                // $('#skills').css('top', '0px');
-
-                // $('#skills').css('left', leftset); 
-            
-                //console.log($('#skills').offset().left); 
-            }
-            
-        }
-        
+        calculateoffset();
     });
-*/
 
     buttonsizer();
     $( window ).resize(buttonsizer);
     //keep skills high
     $(window).on("resize", function(event){
-      calculatetopset();
-
+      calculateoffset();
     });
     
 
@@ -130,7 +135,7 @@ $(document).ready(function() {
         }, 250)
 ;        setTimeout(function(){ 
           autoHeight = $(".jumbotron").css('height', '100%');
-          calculatetopset();
+          calculateoffset();
         }, 4000);
     });
 
