@@ -47,36 +47,52 @@ function cleanhighlighting(){
         }
     });
 }
-function calculateoffset(){
-    var offsetarr = new Array(0,0,0,0,0);
-    offsetarr[0] = $('#education').offset().top;
-    offsetarr[1] = offsetarr[0] + $('#education').height();
-    offsetarr[2] = $('#experience').offset().top;
-    offsetarr[3] = offsetarr[2] + $('#experience').height();
-    offsetarr[4] = $('#extracurricular').offset().top;
-    //console.log(offsetarr);
-    var yscroll = $(window).scrollTop();
-    
-    if(yscroll > offsetarr[1]-(offsetarr[1]-offsetarr[0])/2){
-        
-        if(yscroll > offsetarr[3]-(offsetarr[3]-offsetarr[2])/2){
-            //$('#skills').css('padding-top',offsetarr[4]-offsetarr[0]);
-            $('#skills').animate({'padding-top':offsetarr[4]-offsetarr[0]},100);
-            console.log("P2");
-            return;
-        } 
-        //$('#skills').css('padding-top',offsetarr[2]-offsetarr[0]);
-        if(yscroll > offsetarr[1]-(offsetarr[1]-offsetarr[0])/2){
-            console.log("P1");
-            $('#skills').animate({'padding-top':offsetarr[2]-offsetarr[0]},100);
-            return;    
-        }
-          
-    }    
-    else{ 
-        $('#skills').animate({'padding-top':0},100);
-        console.log("P0");
+var iScrollPos = 0;
+
+function scrolldirup() { // up is TRUE
+    var iCurScrollPos = $(this).scrollTop();
+    if (iCurScrollPos > iScrollPos) {
+        iScrollPos = iCurScrollPos;
+        return false;
+    } else {
+       iScrollPos = iCurScrollPos;
+       return true;
     }
+}
+
+function calculateoffset(){
+    // decides the scrolling of the skills section
+    var offsetarr = new Array(0,0,0,0,0,0,0);
+    offsetarr[0] = $('#education').offset().top;
+    offsetarr[1] = offsetarr[0] + $('#education').height()/2;
+    offsetarr[2] = offsetarr[0] + $('#education').height();
+    offsetarr[3] = $('#experience').offset().top;
+    offsetarr[4] = offsetarr[3] + $('#experience').height()/2;
+    offsetarr[5] = offsetarr[3] + $('#experience').height();
+    offsetarr[6] = $('#extracurricular').offset().top;
+    
+    var currentpadding = $('#skills').css('padding-top').replace(/[^-\d\.]/g, '');
+    var yscroll = $(window).scrollTop();
+    console.log(currentpadding,yscroll, offsetarr);
+    if(currentpadding==0){ // in position 1
+        if(yscroll>offsetarr[1]  && !scrolldirup() ){ // move to position 2
+            $('#skills').animate({'padding-top':offsetarr[3]-offsetarr[0]},500);
+        }
+    }
+    if(currentpadding==offsetarr[3]-offsetarr[0]){ //in position 2
+        if(yscroll>offsetarr[4] && !scrolldirup() ){ //move to position 3
+            $('#skills').animate({'padding-top':offsetarr[6]-offsetarr[0]},500);
+        }
+         if(yscroll<offsetarr[0] && scrolldirup() ){ // move to position 1
+            $('#skills').animate({'padding-top':offsetarr[0]-offsetarr[0]},500);
+        }
+    }
+    if(currentpadding==offsetarr[6]-offsetarr[0]){ // in position 3
+        if(yscroll<offsetarr[3] && scrolldirup() ){ // move to position 2
+            $('#skills').animate({'padding-top':offsetarr[3]-offsetarr[0]},500);
+        }
+    }
+    
 }
 
 $(document).ready(function() {
