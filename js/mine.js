@@ -1,6 +1,7 @@
 function buttonsizer(){
     var ratio = (($("#buttongroupwidth").width()-30) / $("#buttongroupheight").height());
     //console.log("ratio",ratio);
+    console.log("beep");
     if(ratio>(6.857)){
         // port too wide, match height
         var scale=$("#buttongroupheight").height()/70;     
@@ -96,6 +97,7 @@ function calculateoffset(){
 }
 
 $(document).ready(function() {
+    //initialize everything
     var radioCur="resu";
     $("#masterrow").hide();
     $("#abourow").hide();
@@ -104,16 +106,20 @@ $(document).ready(function() {
     $("#pdfrrow").hide();
     $("#getirow").hide();
     $("#menubutton").hide();
+
+    //scrolling rules
     $( window ).scroll(function() {
         calculateoffset();
     });
 
     buttonsizer();
     $( window ).resize(buttonsizer);
+    $( window ).resize(calculateoffset);
     //keep skills high
-    $(window).on("resize", function(event){
-        calculateoffset();
-    });
+    // $(window).on("resize", function(event){
+    //     calculateoffset();
+    //     buttonsizer();
+    // });
     
 
 
@@ -142,17 +148,33 @@ $(document).ready(function() {
         var curHeight = $('.jumbotron').outerHeight();
         $('.jumbotron').css('height', curHeight);
         $('.tofadeonclick, #menubutton').toggle("fade",200);
-        
         setTimeout(function(){ 
             var jumbo = $('.jumbotron');
             autoHeightAnimate(jumbo,2000);
             var master = $('#masterrow');
-            $("#masterrow").show("blind", 3000 );
-            //autoHeightAnimate(master,3000);
-        }, 250)
-;        setTimeout(function(){ 
-          autoHeight = $(".jumbotron").css('height', '100%');
-          calculateoffset();
+
+
+
+
+
+//            $("#masterrow").show("blind", 3000);
+            $("#masterrow").show("slow",buttonsizer);
+
+
+
+
+
+
+
+
+
+
+
+        }, 250);
+        setTimeout(function(){ 
+            buttonsizer();
+            autoHeight = $(".jumbotron").css('height', '100%');
+            calculateoffset();
         }, 4000);
     });
 
