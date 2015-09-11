@@ -51,65 +51,54 @@
     </div>
     <div class="row" id="masterrow">
         <div class="col-md-3 col-xs-0 row-offcanvas" id="sidebar">
-            <div class="matcard shadow-z-2">
-                <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
-                    <li>
-                        <div class="row-action-primary radio radio-material-teal">
-                            <label class="active"><input type="radio" name="optionsRadios" checked="" value="resu"> R&eacutesum&eacute</label>
-                        </div>
-                        <ul style="list-style: none;">
-                            <li>
-                                <div class="row-action-primary togglebutton togglebutton-material-teal">
-                                    <label><input type="checkbox" checked="" id="edu">&nbsp&nbsp Education</label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row-action-primary togglebutton togglebutton-material-teal">
-                                    <label><input type="checkbox" checked="" id="exp">&nbsp&nbsp Experience</label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row-action-primary togglebutton togglebutton-material-teal">
-                                    <label><input type="checkbox" checked="" id="exc">&nbsp&nbsp Extracurricular</label>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="row-action-primary radio radio-material-teal">
-                            <label><input type="radio" name="optionsRadios" value="abou">&nbsp&nbsp About Me</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row-action-primary radio radio-material-teal">
-                            <label><input type="radio" name="optionsRadios" value="pers">&nbsp&nbsp Personal</label>
-                        </div>
-                    </li>
-                    
-                    
-                    <li>
-                        <div class="row-action-primary radio radio-material-teal">
-                            <label><input type="radio" name="optionsRadios" value="pdfr">&nbsp&nbsp .PDF R&eacutesum&eacute</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row-action-primary radio radio-material-teal">
-                            <label><input type="radio" name="optionsRadios" value="geti">&nbsp&nbsp Get in Touch</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row-action-primary radio radio-material-teal">
-                            <label><input type="radio" name="optionsRadios" value="cred">&nbsp&nbsp Credits</label>
-                        </div>
-                    </li>
-                </ul>
+            
+            <div class="panel panel-default shadow-z-2">
+                <div class="panel-heading">
+                    <h2>Menu</h2>
+                </div>
+                <div id="skill-panel" class="panel-body">
+                    <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
+                        <li>
+                            <div class="row-action-primary radio radio-material-teal">
+                                <label class="active"><input type="radio" name="optionsRadios" checked="" value="resu"><strong>R&eacutesum&eacute</strong></label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row-action-primary radio radio-material-teal">
+                                <label><input type="radio" name="optionsRadios" value="abou"><strong>About Me</strong></label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row-action-primary radio radio-material-teal">
+                                <label><input type="radio" name="optionsRadios" value="pers"><strong>Personal</strong></label>
+                            </div>
+                        </li>
+                        
+                        
+                        <li>
+                            <div class="row-action-primary radio radio-material-teal">
+                                <label><input type="radio" name="optionsRadios" value="pdfr"><strong>PDF R&eacutesum&eacute</strong></label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row-action-primary radio radio-material-teal">
+                                <label><input type="radio" name="optionsRadios" value="geti"><strong>Software</strong></label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row-action-primary radio radio-material-teal">
+                                <label><input type="radio" name="optionsRadios" value="cred"><strong>Credits</strong></label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="col-md-9 col-xs-12">
             <div class="row" id="resurow">
                 <div class="col-xs-12 col-md-8">
                     <div class="panel panel-default shadow-z-2" id="education">
-                        <div class="panel-heading"><h2>Education</h2></div>
+                        <div class="panel-heading" id="edu"><h2>Education</h2></div>
                         <div class="panel-body" id="educationcontent">
                             <div class="list-group">
                                 <a class="list-group-item">
@@ -134,7 +123,7 @@
                         </div>
                     </div>
                     <div class="panel panel-default shadow-z-2" id="experience">
-                        <div class="panel-heading">
+                        <div class="panel-heading" id="exp">
                         <h2>Experience</h2></div>
                         <div class="panel-body" id="experiencecontent">
                             <div class="list-group">
@@ -172,7 +161,7 @@
                         </div>
                     </div>
                     <div class="panel panel-default shadow-z-2" id="extracurricular">
-                        <div class="panel-heading">
+                        <div class="panel-heading" id="exc">
                         <h2>Extracurricular</h2> </div>
                         <div class="panel-body" id="extracurricularcontent">
                             <div class="list-group">
@@ -232,57 +221,52 @@
                             
                             <div>
                                 <ul class="nav nav-list">
-                                    <li><span class="glyphicon glyphicon-heart teal">&nbsp</span>Very Experienced</li>
-                                    <li><span class="glyphicon glyphicon-star teal">&nbsp</span>Experienced</li>
-                                    <li><span class="glyphicon glyphicon-star-empty teal">&nbsp</span>Familiar</li>
-                                    <li>&nbsp</li>
-                                    
                                     <li>
-                                        <label class="tree-toggler nav-header"><span class="glyphicon glyphicon-triangle-right">&nbsp</span>Software</label>
+                                        <label class="tree-toggler nav-header"><span class="glyphicon glyphicon-triangle-right"></span>&nbsp Software</label>
                                         <ul class="nav nav-list tree">
-                                            <li class="skill" id="solid"><a><span class="glyphicon glyphicon-heart">&nbsp</span>Solidworks CAD</a></li>
-                                            <li class="skill" id="git"><a><span class="glyphicon glyphicon-heart">&nbsp</span>Git</a></li>
-                                            <li class="skill" id="matla"><a><span class="glyphicon glyphicon-heart">&nbsp</span>MATLAB</a></li>
-                                            <li class="skill" id="boots"><a><span class="glyphicon glyphicon-heart">&nbsp</span>Bootstrap</a></li>
-                                            <li class="skill" id="visua"><a><span class="glyphicon glyphicon-star">&nbsp</span>Visual Studio</a></li>
-                                            <li class="skill" id="vim"><a><span class="glyphicon glyphicon-star">&nbsp</span>Vim</a></li>
-                                            <li class="skill" id="simul"><a><span class="glyphicon glyphicon-star-empty">&nbsp</span>Simulink</a></li>
+                                            <li class="skill" id="solid"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> &nbsp Solidworks CAD</a></li>
+                                            <li class="skill" id="git"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> &nbsp Git</a></li>
+                                            <li class="skill" id="matla"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> &nbsp MATLAB</a></li>
+                                            <li class="skill" id="boots"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-none"></span> &nbsp Bootstrap</a></li>
+                                            <li class="skill" id="visua"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-none"></span> &nbsp Visual Studio</a></li>
+                                            <li class="skill" id="vim"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-none"></span> &nbsp Vim</a></li>
+                                            <li class="skill" id="simul"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-none"></span><span class="glyphicon glyphicon-none"></span> &nbsp Simulink</a></li>
                                         </ul>
                                     </li>
                                     <hr>
                                     <li>
-                                        <label class="tree-toggler nav-header"><span class="glyphicon glyphicon-triangle-right">&nbsp</span>Programming</label>
+                                        <label class="tree-toggler nav-header"><span class="glyphicon glyphicon-triangle-right"></span>&nbsp Programming</label>
                                         <ul class="nav nav-list tree">
-                                            <li class="skill" id="c++"><a><span class="glyphicon glyphicon-heart">&nbsp</span>C/C++</a></li>
-                                            <li class="skill" id="matla"><a><span class="glyphicon glyphicon-heart">&nbsp</span>MATLAB</a></li>
-                                            <li class="skill" id="latex"><a><span class="glyphicon glyphicon-heart">&nbsp</span>LaTeX</a></li>
-                                            <li class="skill" id="htmlc"><a><span class="glyphicon glyphicon-heart">&nbsp</span>HTML/CSS</a></li>
-                                            <li class="skill" id="javas"><a><span class="glyphicon glyphicon-star">&nbsp</span>Javascript</a></li>
-                                            <li class="skill" id="pytho"><a><span class="glyphicon glyphicon-star">&nbsp</span>Python</a></li>
-                                            <li class="skill" id="ardui"><a><span class="glyphicon glyphicon-star">&nbsp</span>Arduino</a></li>
-                                            <li class="skill" id="andro"><a><span class="glyphicon glyphicon-star-empty">&nbsp</span>Android</a></li>
-                                            <li class="skill" id="bash"><a><span class="glyphicon glyphicon-star-empty">&nbsp</span>Bash</a></li>
+                                            <li class="skill" id="c++"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> &nbsp C/C++</a></li>
+                                            <li class="skill" id="matla"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> &nbsp MATLAB</a></li>
+                                            <li class="skill" id="latex"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> &nbsp LaTeX</a></li>
+                                            <li class="skill" id="ardui"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> &nbsp Arduino</a></li>
+                                            <li class="skill" id="htmlc"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> &nbsp HTML/CSS</a></li>
+                                            <li class="skill" id="javas"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-none"></span> &nbsp Javascript</a></li>
+                                            <li class="skill" id="pytho"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-none"></span> &nbsp Python</a></li>
+                                            <li class="skill" id="andro"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-none"></span> &nbsp Android</a></li>
+                                            <li class="skill" id="bash"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-none"></span><span class="glyphicon glyphicon-none"></span> &nbsp Bash</a></li>
                                         </ul>
                                     </li>
                                     <hr>
                                     <li>
-                                        <label class="tree-toggler nav-header"><span class="glyphicon glyphicon-triangle-right">&nbsp</span>Manual</label>
+                                        <label class="tree-toggler nav-header"><span class="glyphicon glyphicon-triangle-right"></span>&nbsp Manual</label>
                                         <ul class="nav nav-list tree">
-                                            <li class="skill" id="solde"><a><span class="glyphicon glyphicon-heart">&nbsp</span>Soldering</a></li>
-                                            <li class="skill" id="manua"><a><span class="glyphicon glyphicon-heart">&nbsp</span>Manual Mill</a></li>
-                                            <li class="skill" id="lathe"><a><span class="glyphicon glyphicon-star">&nbsp</span>Lathe</a></li>
-                                            <li class="skill" id="drill"><a><span class="glyphicon glyphicon-star">&nbsp</span>Drill Press</a></li>
-                                            <li class="skill" id="cncmi"><a><span class="glyphicon glyphicon-star-empty">&nbsp</span>CNC Mill</a></li>
+                                            <li class="skill" id="solde"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> &nbsp Soldering</a></li>
+                                            <li class="skill" id="manua"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> &nbsp Manual Mill</a></li>
+                                            <li class="skill" id="lathe"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-none"></span> &nbsp Lathe</a></li>
+                                            <li class="skill" id="drill"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-none"></span> &nbsp Drill Press</a></li>
+                                            <li class="skill" id="cncmi"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-none"></span><span class="glyphicon glyphicon-none"></span> &nbsp CNC Mill</a></li>
                                             
                                         </ul>
                                     </li>
                                     <hr>
                                     <li>
-                                        <label class="tree-toggler nav-header"><span class="glyphicon glyphicon-triangle-right">&nbsp</span>Mental</label>
+                                        <label class="tree-toggler nav-header"><span class="glyphicon glyphicon-triangle-right"></span>&nbsp Mental</label>
                                         <ul class="nav nav-list tree">
-                                            <li class="skill" id="mecha"><a><span class="glyphicon glyphicon-heart">&nbsp</span>Mechanical Design</a></li>
-                                            <li class="skill" id="mento"><a><span class="glyphicon glyphicon-heart">&nbsp</span>Mentorship & Teaching</a></li>
-                                            <li class="skill" id="circu"><a><span class="glyphicon glyphicon-star">&nbsp</span>Circuit Design</a></li>
+                                            <li class="skill" id="mecha"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> &nbsp Mechanical Design</a></li>
+                                            <li class="skill" id="mento"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-none"></span> &nbsp Mentorship & Teaching</a></li>
+                                            <li class="skill" id="circu"><a><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-none"></span><span class="glyphicon glyphicon-none"></span> &nbsp Circuit Design</a></li>
                                         </ul>
                                     </li>
                                 </ul>

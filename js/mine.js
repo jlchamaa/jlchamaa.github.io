@@ -59,7 +59,7 @@ function scrolldirup() { // up is TRUE
        return true;
     }
 }
-
+    var curpos =1;
 function calculateoffset(){
     // decides the scrolling of the skills section
     var offsetarr = new Array(0,0,0,0,0,0,0);
@@ -73,23 +73,23 @@ function calculateoffset(){
     
     var currentpadding = $('#skills').css('padding-top').replace(/[^-\d\.]/g, '');
     var yscroll = $(window).scrollTop();
-    console.log(currentpadding,yscroll, offsetarr);
-    if(currentpadding==0){ // in position 1
+    console.log(currentpadding,yscroll, curpos,offsetarr);
+    if(curpos==1){ // in position 1
         if(yscroll>offsetarr[1]  && !scrolldirup() ){ // move to position 2
-            $('#skills').animate({'padding-top':offsetarr[3]-offsetarr[0]},500);
+            $('#skills').animate({'padding-top':offsetarr[3]-offsetarr[0]},500); curpos=2;
         }
     }
-    if(currentpadding==offsetarr[3]-offsetarr[0]){ //in position 2
+    if(curpos==2){ //in position 2
         if(yscroll>offsetarr[4] && !scrolldirup() ){ //move to position 3
-            $('#skills').animate({'padding-top':offsetarr[6]-offsetarr[0]},500);
+            $('#skills').animate({'padding-top':offsetarr[6]-offsetarr[0]},500); curpos=3;
         }
          if(yscroll<offsetarr[0] && scrolldirup() ){ // move to position 1
-            $('#skills').animate({'padding-top':offsetarr[0]-offsetarr[0]},500);
+            $('#skills').animate({'padding-top':offsetarr[0]-offsetarr[0]},500); curpos=1;
         }
     }
-    if(currentpadding==offsetarr[6]-offsetarr[0]){ // in position 3
+    if(curpos==3){ // in position 3
         if(yscroll<offsetarr[3] && scrolldirup() ){ // move to position 2
-            $('#skills').animate({'padding-top':offsetarr[3]-offsetarr[0]},500);
+            $('#skills').animate({'padding-top':offsetarr[3]-offsetarr[0]},500); curpos=2;
         }
     }
     
@@ -112,7 +112,7 @@ $(document).ready(function() {
     $( window ).resize(buttonsizer);
     //keep skills high
     $(window).on("resize", function(event){
-      calculateoffset();
+        calculateoffset();
     });
     
 
@@ -168,6 +168,7 @@ $(document).ready(function() {
         }
         else{
             $('#educationcontent').animate({height:0,padding:"-=15px"});
+
         }
     });
 
@@ -182,6 +183,7 @@ $(document).ready(function() {
         }
         else{
             $('#experiencecontent').animate({height:0,padding:"-=15px"});
+
         }
     });
 
@@ -196,6 +198,7 @@ $(document).ready(function() {
         }
         else{
             $('#extracurricularcontent').animate({height:0,padding:"-=15px"});
+
         }
     });
 
