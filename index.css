@@ -110,6 +110,9 @@ hr{
     content: "\2122";
     color: transparent !important;
 }
+.menuitem{
+  font-size: 20px;
+}
 
 
 /*

@@ -120,7 +120,12 @@ $(document).ready(function() {
     //     calculateoffset();
     //     buttonsizer();
     // });
-    
+     (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.src = 'http://assets.gfycat.com/js/gfyajax-0.517d.js';
+    s.parentNode.insertBefore(g, s);
+}(document, 'script'));
 
 
     
@@ -152,24 +157,8 @@ $(document).ready(function() {
             var jumbo = $('.jumbotron');
             autoHeightAnimate(jumbo,2000);
             var master = $('#masterrow');
-
-
-
-
-
 //            $("#masterrow").show("blind", 3000);
-            $("#masterrow").show("slow",buttonsizer);
-
-
-
-
-
-
-
-
-
-
-
+            $("#masterrow").show("fast",buttonsizer);
         }, 250);
         setTimeout(function(){ 
             buttonsizer();
