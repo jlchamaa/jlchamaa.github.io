@@ -96,7 +96,10 @@ hr{
   border-top-color: #ccc;
   
 }
-.tree{
+.tree-toggler{
+  cursor: pointer;
+}
+.skill{
   cursor: pointer;
 }
 .skillselect{
@@ -118,6 +121,7 @@ hr{
   top: 10px;
   right: 10px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 
