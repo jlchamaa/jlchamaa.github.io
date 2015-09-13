@@ -169,8 +169,8 @@ $(document).ready(function() {
 
     // collapsing the resume sections on toggle
     $("#edu").click(function(){
-        $(this).toggleClass('glyphicon-chevron-up');
-        $(this).toggleClass('glyphicon-chevron-down');
+        $(this).toggleClass('glyphicon-minus-sign');
+        $(this).toggleClass('glyphicon-plus-sign');
         var tempheight = $('#educationcontent').height();
         if(tempheight==0){
             $('#educationcontent').animate({padding:"+=15px"},0);
@@ -186,8 +186,8 @@ $(document).ready(function() {
     });
 
     $("#exp").click(function(){
-        $(this).toggleClass('glyphicon-chevron-up');
-        $(this).toggleClass('glyphicon-chevron-down');
+        $(this).toggleClass('glyphicon-minus-sign');
+        $(this).toggleClass('glyphicon-plus-sign');
         var tempheight = $('#experiencecontent').height();
         if(tempheight==0){
             $('#experiencecontent').animate({padding:"+=15px"},0);
@@ -203,8 +203,8 @@ $(document).ready(function() {
     });
 
     $("#exc").click(function(){
-        $(this).toggleClass('glyphicon-chevron-up');
-        $(this).toggleClass('glyphicon-chevron-down');
+        $(this).toggleClass('glyphicon-minus-sign');
+        $(this).toggleClass('glyphicon-plus-sign');
         var tempheight = $('#extracurricularcontent').height();
         if(tempheight==0){
             $('#extracurricularcontent').animate({padding:"+=15px"},0);
