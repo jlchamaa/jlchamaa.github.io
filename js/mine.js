@@ -37,15 +37,18 @@ function toggletree(element){ // needs to be passed elements of class .tree-togg
     $(element).children('span').toggleClass('glyphicon-triangle-bottom');
     $(element).children('span').toggleClass('glyphicon-triangle-right');
 }
-function cleanhighlighting(){
+function cleanhighlighting(skillclick){//skillclick=true if a skill was clicked, false if experience clicked
     $('.list-group-item').css('border-left','0px solid');
     $('.skill').css('border-left','0px solid');
     $('.skill').css('margin-left','0px');
-    $('.tree').each(function(i){
-        if($(this).is(":visible")){
-            toggletree($(this).parent().children('label'));
-        }
-    });
+    if(!skillclick){
+        $('.tree').each(function(i){
+            if($(this).is(":visible")){
+                toggletree($(this).parent().children('label'));
+            }
+        });
+    }
+    
 }
 var iScrollPos = 0;
 
@@ -232,7 +235,7 @@ $(document).ready(function() {
 
     // skill selection
     $(".skillselect").click(function(){
-        cleanhighlighting();
+        cleanhighlighting(false);
         var thiselement=$(this);
         setTimeout(function(){
             highlight(thiselement.parent('.list-group-item'));
@@ -246,6 +249,17 @@ $(document).ready(function() {
             });
                 
 
+        },350);
+        globalcolorcounter+=1;
+    });
+
+    $(".skill").click(function(){
+        cleanhighlighting(true);
+        var thiselement=$(this);
+        setTimeout(function(){
+            highlight(thiselement);
+            var skillid =thiselement.attr('id').split(/\s+/);
+            highlight($('.'+skillid).parent('.list-group-item'));
         },350);
         globalcolorcounter+=1;
     });
