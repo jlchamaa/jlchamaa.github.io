@@ -1,7 +1,6 @@
 function buttonsizer(){
     var ratio = (($("#buttongroupwidth").width()-30) / $("#buttongroupheight").height());
     //console.log("ratio",ratio);
-    console.log("beep");
     if(ratio>(6.857)){
         // port too wide, match height
         var scale=$("#buttongroupheight").height()/70;     
@@ -39,7 +38,7 @@ function toggletree(element){ // needs to be passed elements of class .tree-togg
     $(element).children('span').toggleClass('glyphicon-triangle-right');
 }
 function cleanhighlighting(){
-    $('.skillselect').css('border-left','0px solid');
+    $('.list-group-item').css('border-left','0px solid');
     $('.skill').css('border-left','0px solid');
     $('.skill').css('margin-left','0px');
     $('.tree').each(function(i){
@@ -74,7 +73,7 @@ function calculateoffset(){
     
     var currentpadding = $('#skills').css('padding-top').replace(/[^-\d\.]/g, '');
     var yscroll = $(window).scrollTop();
-    console.log(currentpadding,yscroll, curpos,offsetarr);
+    //console.log(currentpadding,yscroll, curpos,offsetarr);
     if(curpos==1){ // in position 1
         if(yscroll>offsetarr[1]  && !scrolldirup() ){ // move to position 2
             $('#skills').animate({'padding-top':offsetarr[3]-offsetarr[0]},500); curpos=2;
@@ -227,52 +226,6 @@ $(document).ready(function() {
                 $(temp).hide();
             var temp="#"+radioValue+"row";
                 $(temp).show();
-            switch(radioValue){
-                case "resu":
-                    $('#quote').text("\"One man's 'magic' is another man's engineering.\"");
-                    $('#author').text("- Robert Heinlein");
-                    $("#edu").prop("disabled", false);
-                    $("#exc").prop("disabled", false);
-                    $("#exp").prop("disabled", false);
-                    break;
-                case "abou":
-                    $('#quote').text("\"One man's 'magic' is another man's engineering.\"");
-                    $('#author').text("- Robert Heinlein");
-                    $("#edu").prop("disabled", true);
-                    $("#exc").prop("disabled", true);
-                    $("#exp").prop("disabled", true);    
-                    break;
-                case "cred":
-                    $('#quote').text("\"One man's 'magic' is another man's engineering.\"");
-                    $('#author').text("- Robert Heinlein");
-                    $("#edu").prop("disabled", true);
-                    $("#exc").prop("disabled", true);
-                    $("#exp").prop("disabled", true);
-                    break;
-                case "pers":
-                    $('#quote').text("\"One man's 'magic' is another man's engineering.\"");
-                    $('#author').text("- Robert Heinlein");
-                    $("#edu").prop("disabled", true);
-                    $("#exc").prop("disabled", true);
-                    $("#exp").prop("disabled", true);
-                    break;
-                case "pdfr":
-                    $('#quote').text("\"Innovation distinguishes between a leader and a follower.\"");
-                    $('#author').text("- Steve Jobs");
-                    $("#edu").prop("disabled", true);
-                    $("#exc").prop("disabled", true);
-                    $("#exp").prop("disabled", true);
-                    break;
-                case "geti":
-                    $('#quote').text("\"One man's 'magic' is another man's engineering.\"");
-                    $('#author').text("- Robert Heinlein");
-                    $("#edu").prop("disabled", true);
-                    $("#exc").prop("disabled", true);
-                    $("#exp").prop("disabled", true);
-                    break;
-                default:
-                    break;
-            }
         }
         radioCur=radioValue;
     });
@@ -282,7 +235,7 @@ $(document).ready(function() {
         cleanhighlighting();
         var thiselement=$(this);
         setTimeout(function(){
-            highlight(thiselement);
+            highlight(thiselement.parent('.list-group-item'));
             var classList =thiselement.attr('class').split(/\s+/);
             classList.splice(0,2);
             $.each(classList, function(index, item){
