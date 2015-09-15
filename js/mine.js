@@ -141,11 +141,13 @@ $(document).ready(function() {
     // This command is used to initialize some elements and make them work properly
     $.material.init();
     $("[data-toggle=popover]").popover();
+
     // hitting the thingy toggle button thingy
     $('.flaticon-envelope3').click(function () {
         $('#menusidebar').toggleClass('activemenu');
         $('#contentrow').toggleClass('activemenu');
     });
+    
     
     //"Learn More" button click
     $("#learnmore").click(function(){

@@ -22,11 +22,12 @@
   margin-left: 0px;
   margin-right: 0px;
   position: relative;
+  overflow: visible;
 }
 
 html,
 body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  /* overflow-x: hidden;  Prevent scroll on narrow devices */
   background: #303030;
 }
 
@@ -158,11 +159,13 @@ hr{
     transition: transform 500ms ease;
     transform: translate3d(-100%, 0, 0);
     width: 90%;
+    height: 100%;
   }
   #menusidebar.activemenu{
     transition: transform 500ms ease;
     transform: translate3d(0%, 0, 0);
     width: 90%;
+    height: 100%;
   }
   #contentrow{
     transition: transform 500ms ease;
