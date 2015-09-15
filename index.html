@@ -20,8 +20,8 @@
         <div  style="color:white;" class="jumbotron">
             <div class="row" id="buttongroupheight">
                 <div class="col-xs-12 col-md-6">
-                    <h1 class="text-center">Jean-Luc Chamaa</h1>
-                    <h3 class="text-center"><i>Mechanical Engineering Student</i> at UCLA</h3>
+                    <h1 class="text-center" id="name">Jean-Luc Chamaa</h1>
+                    <h3 class="text-center" id="school"><i>Mechanical Engineering Student</i> at UCLA</h3>
                 </div>
                 <div class="text-center col-xs-12 col-md-6" id="buttongroupwidth">
                     <a class="btn btn-primary btn-raised btn-fab mdi-actiongrade btn-material-teal flaticon-envelope3" ></a>
@@ -33,10 +33,7 @@
                 </div>
                 
             </div>
-            <div class=" hidden-md hidden-lg toggleholder">
-                <a class="togglebutton btn btn-primary btn-sm" id="menubutton" data-toggle="offcanvas"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-                
-            </div>
+
             <div class="tofadeonclick" id="jumbospacing">
                 <p>&nbsp</p>
                 <p>&nbsp</p>
@@ -50,7 +47,7 @@
         <p><a class="btn btn-primary btn-lg tofadeonclick" role="button" id="learnmore">Learn more</a></p>
     </div>
     <div class="row" id="masterrow">
-        <div class="col-md-3 col-xs-0 row-offcanvas" id="sidebar">
+        <div class="col-md-3 col-xs-0 row-offcanvas" id="menusidebar">
             
             <div class="panel panel-default shadow-z-2">
                 <div class="panel-heading">
@@ -94,7 +91,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-9 col-xs-12">
+        <div class="col-md-9 col-xs-12" id="contentrow">
             <div class="row" id="resurow">
                 <div class="col-xs-12 col-md-8">
                     <div class="panel panel-default shadow-z-2" id="education">
@@ -222,7 +219,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 hidden-sm hidden-xs" id="skills">
+                <div class="col-md-4 col-xs-12" id="skills">
                     <div class="panel panel-default shadow-z-2">
                         <div class="panel-heading">
                             <h2>Skills</h2>
@@ -329,13 +326,18 @@
             </div>
             <div class="row" id="credrow">
                 <div class="col-xs-12">
-                    <div class="matcard">
-                        <h1>Credits</h1>
-                        <h3>https://github.com/FezVrasta/bootstrap-material-design</h3>
-                        <h3>http://www.flaticon.com/packs/icomoon-free-1/</h3>
-                        <h3>http://www.bootply.com/113767# </h3>
-                        <h3>http://www.thecssninja.com/css/css-tree-menu</h3>
+                    <div class="panel panel-default shadow-z-2">
+                        <div class="panel-heading">
+                            <h2>Credits</h2>
+                        </div>
+                        <div class="panel-body">
+                            <p>https://github.com/FezVrasta/bootstrap-material-design</p>
+                            <p>http://www.flaticon.com/packs/icomoon-free-1/</p>
+                            <p>http://www.bootply.com/113767# </p>
+                            <p>http://www.thecssninja.com/css/css-tree-menu</p>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
             <div class="row" id="getirow">
