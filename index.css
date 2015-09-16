@@ -27,7 +27,8 @@
 
 html,
 body {
-  overflow-x: hidden;  /*Prevent scroll on narrow devices */
+  overflow-x: hidden;
+  overflow-y: visible;  /*Prevent scroll on narrow devices */
   background: #303030;
 }
 
@@ -152,6 +153,12 @@ hr{
 }
 #dotnav{
   display: none;
+}
+.whitelink{
+  color: #ffffff;
+}
+.whitelink:hover{
+  color: #ffffff;
 }
 /*
  * Off Canvas
