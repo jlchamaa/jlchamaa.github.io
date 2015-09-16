@@ -50,6 +50,45 @@ function cleanhighlighting(skillclick){//skillclick=true if a skill was clicked,
     }
     
 }
+var currentslide=2;
+function swiper(from,to){
+    if(from==1 && to==2){
+        console.log('1->2')
+        $('#menusidebar').toggleClass('activemenu');
+        $('#contentrow').toggleClass('activemenu'); 
+        $('#slide1').children().css({ fill: "#303030" });
+        $('#slide2').children().css({ fill: "#009688" });  
+        currentslide=2;  
+        return;
+    }
+    if(from==2 && to==3){
+        console.log('2->3')
+        $('#skills').toggleClass('activeskills');
+        $('#exprow').toggleClass('activeskills');
+        $('#slide2').children().css({ fill: "#303030" });
+        $('#slide3').children().css({ fill: "#009688" });   
+        currentslide=3;  
+        return; 
+    }
+    if(from==3 && to==2){
+        console.log('3->2')
+        $('#skills').toggleClass('activeskills');
+        $('#exprow').toggleClass('activeskills');
+        $('#slide3').children().css({ fill: "#303030" });
+        $('#slide2').children().css({ fill: "#009688" });  
+        currentslide=2;   
+        return;  
+    }
+    if(from==2 && to==1){
+        console.log('2->1')
+        $('#menusidebar').toggleClass('activemenu');
+        $('#contentrow').toggleClass('activemenu'); 
+        $('#slide2').children().css({ fill: "#303030" });
+        $('#slide1').children().css({ fill: "#009688" }); 
+        currentslide=1;  
+        return;
+    }
+}
 var iScrollPos = 0;
 
 function scrolldirup() { // up is TRUE
@@ -109,6 +148,7 @@ $(document).ready(function() {
     $("#pdfrrow").hide();
     $("#getirow").hide();
     $("#menubutton").hide();
+    $("#dotnav").hide();
 
     //scrolling rules
     $( window ).scroll(function() {
@@ -143,38 +183,59 @@ $(document).ready(function() {
     $.material.init();
     $("[data-toggle=popover]").popover();
 
-    // hitting the thingy toggle button thingy
-    $(document).on("swiperight", function (e) {
-        if(!$('#menusidebar').hasClass('activemenu') && !$('#skills').hasClass('activeskills')){ //centered, going left
-            console.log('2->1')
-            $('#menusidebar').toggleClass('activemenu');
-            $('#exprow').toggleClass('activemenu');    
+    // passing swipes
+    $('#masterrow').on("swiperight", function (e) {
+        if(currentslide==2){ //centered, going left
+            swiper(2,1);
+    console.log(currentslide);
             return;
         }
-        if($('#skills').hasClass('activeskills')){ // right, going center
-            console.log('3->2')
-            $('#skills').toggleClass('activeskills');
-            $('#exprow').toggleClass('activeskills');  
+        if(currentslide==3){ // right, going center
+            swiper(3,2);   
+    console.log(currentslide);
             return;  
         }
     });
-    $(document).on("swipeleft", function (e) {
-        if($('#menusidebar').hasClass('activemenu')){ //left, going center
-            console.log('1->2')
-            $('#menusidebar').toggleClass('activemenu');
-            $('#exprow').toggleClass('activemenu');    
+    $('#masterrow').on("swipeleft", function (e) {
+        if(currentslide==1){ //left, going center
+            swiper(1,2);   
+    console.log(currentslide);
             return;
         }
-        if(!$('#skills').hasClass('activeskills') && !$('#menusidebar').hasClass('activemenu')){ //centered, going right
-            console.log('2->3')
-            $('#skills').toggleClass('activeskills');
-            $('#exprow').toggleClass('activeskills');   
+        if(currentslide==2){ //centered, going right
+            swiper(2,3);    
+    console.log(currentslide);
             return; 
+        }
+    });
+    $('#slide1').click(function(){
+        if(currentslide==3){
+            swiper(3,2);
+        }
+        if(currentslide==2){
+            swiper(2,1);
+        }
+    });
+    $('#slide2').click(function(){
+        if(currentslide==3){
+            swiper(3,2);
+        }
+        if(currentslide==1){
+            swiper(1,2);
+        }
+    });
+    $('#slide3').click(function(){
+        if(currentslide==1){
+            swiper(1,2);
+        }
+        if(currentslide==2){
+            swiper(2,3);
         }
     });
     
     //"Learn More" button click
     $("#learnmore").click(function(){
+        $('#dotnav').css({'display':''});
         var curHeight = $('.jumbotron').outerHeight();
         $('.jumbotron').css('height', curHeight);
         $('.tofadeonclick, #menubutton').toggle("fade",200);

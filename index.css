@@ -150,12 +150,18 @@ hr{
 .nav-pills>li.active> a:hover {
     background-color: #00796B;
 }
+#dotnav{
+  display: none;
+}
 /*
  * Off Canvas
  * --------------------------------------------------
  */
 @media screen and (max-width: 991px) {
 
+  #dotnav{
+    display: block;
+  }
   #menusidebar{
     position: absolute;
     top: 0px;
@@ -186,14 +192,19 @@ hr{
     width: 90%;
     height: 100%;
   }
+  #contentrow{
+    transition: transform 500ms ease;
+    transform: translate3d(0%, 0, 0);    
+  }
+  #contentrow.activemenu{
+    transition: transform 500ms ease;
+    transform: translate3d(90%, 0, 0);
+  }
   #exprow{
     transition: transform 500ms ease;
     transform: translate3d(0%, 0, 0);    
   }
-  #exprow.activemenu{
-    transition: transform 500ms ease;
-    transform: translate3d(90%, 0, 0);
-  }
+ 
   #exprow.activeskills{
     transition: transform 500ms ease;
     transform: translate3d(-90%, 0, 0);
