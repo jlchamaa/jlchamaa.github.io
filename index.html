@@ -53,47 +53,22 @@
                 <div class="panel-heading">
                     <h2>Menu</h2>
                 </div>
-                <div id="skill-panel" class="panel-body">
-                    <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
-                        <li>
-                            <div class="row-action-primary radio radio-material-teal">
-                                <label class="active menuitem"><input type="radio" name="optionsRadios" checked="" value="resu"><strong>R&eacutesum&eacute</strong></label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row-action-primary radio radio-material-teal">
-                                <label class="menuitem"><input type="radio" name="optionsRadios" value="abou"><strong>About Me</strong></label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row-action-primary radio radio-material-teal">
-                                <label class="menuitem"><input type="radio" name="optionsRadios" value="pers"><strong>Personal</strong></label>
-                            </div>
-                        </li>
-                        
-                        
-                        <li>
-                            <div class="row-action-primary radio radio-material-teal">
-                                <label class="menuitem"><input type="radio" name="optionsRadios" value="pdfr"><strong>PDF R&eacutesum&eacute</strong></label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row-action-primary radio radio-material-teal">
-                                <label class="menuitem"><input type="radio" name="optionsRadios" value="geti"><strong>Get In Touch</strong></label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row-action-primary radio radio-material-teal">
-                                <label class="menuitem"><input type="radio" name="optionsRadios" value="cred"><strong>Credits</strong></label>
-                            </div>
-                        </li>
+                <div id="skill-panel" role="navigation" class="panel-body">
+
+                    <ul class="nav nav-pills nav-stacked">
+                        <li id="resu" class="active"><a data-toggle="pill" ><strong>R&eacutesum&eacute</strong></a></li>
+                        <li id="abou"><a data-toggle="pill" ><strong>About Me</strong></a></li>
+                        <li id="pers"><a data-toggle="pill" ><strong>Personal</strong></a></li>                    
+                        <li id="pdfr"><a data-toggle="pill" ><strong>PDF R&eacutesum&eacute</strong></a></li>
+                        <li id="geti"><a data-toggle="pill" ><strong>Get In Touch</strong></a></li>
+                        <li id="cred"><a data-toggle="pill" ><strong>Credits</strong></a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="col-md-9 col-xs-12" id="contentrow">
             <div class="row" id="resurow">
-                <div class="col-xs-12 col-md-8">
+                <div class="col-xs-12 col-md-8" id="exprow">
                     <div class="panel panel-default shadow-z-2" id="education">
                         <div class="panel-heading" style="position:relative;">
                             <h2>Education</h2> <span id="edu" class="minimizer glyphicon glyphicon-minus-sign"></span>
@@ -349,8 +324,8 @@
             </div>
         </div>
     </div>
-
     <script src="external/jquery/jquery.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="jquery-ui.min.js"></script>
     <script src="js/ripples.min.js"></script>
     <script src="js/material.min.js"></script>

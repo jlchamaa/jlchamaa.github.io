@@ -99,6 +99,7 @@ function calculateoffset(){
 }
 
 $(document).ready(function() {
+    
     //initialize everything
     var radioCur="resu";
     $("#masterrow").hide();
@@ -143,11 +144,34 @@ $(document).ready(function() {
     $("[data-toggle=popover]").popover();
 
     // hitting the thingy toggle button thingy
-    $('.flaticon-envelope3').click(function () {
-        $('#menusidebar').toggleClass('activemenu');
-        $('#contentrow').toggleClass('activemenu');
+    $(document).on("swiperight", function (e) {
+        if(!$('#menusidebar').hasClass('activemenu') && !$('#skills').hasClass('activeskills')){ //centered, going left
+            console.log('2->1')
+            $('#menusidebar').toggleClass('activemenu');
+            $('#exprow').toggleClass('activemenu');    
+            return;
+        }
+        if($('#skills').hasClass('activeskills')){ // right, going center
+            console.log('3->2')
+            $('#skills').toggleClass('activeskills');
+            $('#exprow').toggleClass('activeskills');  
+            return;  
+        }
     });
-    
+    $(document).on("swipeleft", function (e) {
+        if($('#menusidebar').hasClass('activemenu')){ //left, going center
+            console.log('1->2')
+            $('#menusidebar').toggleClass('activemenu');
+            $('#exprow').toggleClass('activemenu');    
+            return;
+        }
+        if(!$('#skills').hasClass('activeskills') && !$('#menusidebar').hasClass('activemenu')){ //centered, going right
+            console.log('2->3')
+            $('#skills').toggleClass('activeskills');
+            $('#exprow').toggleClass('activeskills');   
+            return; 
+        }
+    });
     
     //"Learn More" button click
     $("#learnmore").click(function(){
@@ -222,15 +246,21 @@ $(document).ready(function() {
     });
 
     // sidebar radio features
-    $("input[type='radio']").click(function(){
-        var radioValue = $("input[name='optionsRadios']:checked").val();
-        if(radioCur!=radioValue){
-            var temp="#"+radioCur+"row";
-                $(temp).hide();
-            var temp="#"+radioValue+"row";
-                $(temp).show();
-        }
-        radioCur=radioValue;
+    $("a[data-toggle='pill']").click(function(){
+        console.log('pill click');
+        setTimeout(function(){
+            var radioValue;
+            radioValue = $("#skill-panel").children('.nav').children('.active').attr('id');    
+            console.log(radioValue);
+
+            if(radioCur!=radioValue){
+                var temp="#"+radioCur+"row";
+                    $(temp).hide();
+                var temp="#"+radioValue+"row";
+                    $(temp).show();
+            }
+            radioCur=radioValue;
+        },50);
     });
 
     // skill selection

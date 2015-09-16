@@ -27,7 +27,7 @@
 
 html,
 body {
-  /* overflow-x: hidden;  Prevent scroll on narrow devices */
+  overflow-x: hidden;  /*Prevent scroll on narrow devices */
   background: #303030;
 }
 
@@ -144,8 +144,12 @@ hr{
   font-size: 20px;
   cursor: pointer;
 }
-
-
+.nav-pills>li.active> a {
+    background-color: #009688;
+}
+.nav-pills>li.active> a:hover {
+    background-color: #00796B;
+}
 /*
  * Off Canvas
  * --------------------------------------------------
@@ -167,13 +171,32 @@ hr{
     width: 90%;
     height: 100%;
   }
-  #contentrow{
+  #skills{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: transform 500ms ease;
+    transform: translate3d(110%, 0, 0);
+    width: 90%;
+    height: 100%;
+  }
+  #skills.activeskills{
+    transition: transform 500ms ease;
+    transform: translate3d(10%, 0, 0);
+    width: 90%;
+    height: 100%;
+  }
+  #exprow{
     transition: transform 500ms ease;
     transform: translate3d(0%, 0, 0);    
   }
-  #contentrow.activemenu{
+  #exprow.activemenu{
     transition: transform 500ms ease;
     transform: translate3d(90%, 0, 0);
+  }
+  #exprow.activeskills{
+    transition: transform 500ms ease;
+    transform: translate3d(-90%, 0, 0);
   }
 
   .jumbotron {
