@@ -24,11 +24,9 @@ function autoHeightAnimate(element, time){
     element.outerHeight(curHeight); // Reset to Default Height
     element.stop().animate({ height: autoHeight },{duration: parseInt(time), easing:'easeOutQuad'}); // Animate to Auto Height
 }
-var globalcolorcounter=0;
-var colorpalette=['#F44336', '#E91E63', '#9C27B0', '#3F51B5','#2196F3','#FFC107','#FF5722'];
 
 function highlight(element){
-    var newcol= ('5px solid '+colorpalette[globalcolorcounter%7]);
+    var newcol= ('5px solid #3F51B5');
     $(element).css('border-left', newcol);
     $(element).css('margin-left', '-5px');
 }
@@ -103,39 +101,28 @@ function scrolldirup() { // up is TRUE
 }
     var curpos =1;
 function calculateoffset(){
-    // decides the scrolling of the skills section
-    var offsetarr = new Array(0,0,0,0,0,0,0);
-    offsetarr[0] = $('#education').offset().top;
-    offsetarr[1] = offsetarr[0] + $('#education').height()/2;
-    offsetarr[2] = offsetarr[0] + $('#education').height();
-    offsetarr[3] = $('#experience').offset().top;
-    offsetarr[4] = offsetarr[3] + $('#experience').height()/2;
-    offsetarr[5] = offsetarr[3] + $('#experience').height();
-    offsetarr[6] = $('#extracurricular').offset().top;
-    
+    var topset = $('.jumbotron').outerHeight();
     var yscroll = $(window).scrollTop();
-    if(curpos==1){ // in position 1
-        if(yscroll>offsetarr[1]  && !scrolldirup() ){ // move to position 2
-            $('#skills').animate({'top':offsetarr[3]-offsetarr[0]},500); curpos=2;
-            $('#menusidebar').animate({'top':offsetarr[3]-offsetarr[0]},500); curpos=2;
-        }
+   
+    var newwidth=parseInt($('#skills').css('width'))-30;
+    if(newwidth>50){ // so rogue calls with hidden items don't happen
+        $('#fullskillpanel').css({'width':newwidth});
     }
-    if(curpos==2){ //in position 2
-        if(yscroll>offsetarr[4] && !scrolldirup() ){ //move to position 3
-            $('#skills').animate({'top':offsetarr[6]-offsetarr[0]},500); curpos=3;
-            $('#menusidebar').animate({'top':offsetarr[6]-offsetarr[0]},500); curpos=3;
-        }
-         if(yscroll<offsetarr[0] && scrolldirup() ){ // move to position 1
-            $('#skills').animate({'top':offsetarr[0]-offsetarr[0]},500); curpos=1;
-            $('#menusidebar').animate({'top':offsetarr[0]-offsetarr[0]},500); curpos=1;
-        }
+    
+    var newwidth=parseInt($('#menusidebar').css('width'))-30;
+    if(newwidth>50){
+        $('#menupanel').css({'width':newwidth});
     }
-    if(curpos==3){ // in position 3
-        if(yscroll<offsetarr[3] && scrolldirup() ){ // move to position 2
-            $('#skills').animate({'top':offsetarr[3]-offsetarr[0]},500); curpos=2;
-            $('#menusidebar').animate({'top':offsetarr[3]-offsetarr[0]},500); curpos=2;
-        }
+   
+    if(yscroll>topset){
+        $('#fullskillpanel').addClass('stickyskills');
+        $('#menupanel').addClass('stickymenu');
     }
+    else{
+        $('#fullskillpanel').removeClass('stickyskills');
+        $('#menupanel').removeClass('stickymenu');
+    }
+    
     
 }
 
@@ -143,6 +130,7 @@ $(document).ready(function() {
     
     //initialize everything
     var radioCur="resu";
+    $('.ui-loader').remove();
     $("#masterrow").hide();
     $("#abourow").hide();
     $("#credrow").hide();
@@ -152,9 +140,10 @@ $(document).ready(function() {
     $("#menubutton").hide();
     $("#dotnav").hide();
 
+    var scrolltimes=0;
     //scrolling rules
-    $( window ).scroll(function() {
-        calculateoffset();
+    $( window ).scroll(function() { 
+        calculateoffset();    
     });
 
     buttonsizer();
@@ -351,7 +340,6 @@ $(document).ready(function() {
                 
 
         },350);
-        globalcolorcounter+=1;
     });
 
     $(".skill").click(function(){
@@ -362,7 +350,6 @@ $(document).ready(function() {
             var skillid =thiselement.attr('id').split(/\s+/);
             highlight($('.'+skillid).parent('.list-group-item'));
         },350);
-        globalcolorcounter+=1;
     });
     
 

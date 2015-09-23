@@ -32,6 +32,10 @@ body {
   background: #303030;
 }
 
+.ui-page{
+min-height: 100px !important;  /* to override jquery mobile being a bitch */
+}
+
 .navbar{
   position: relative;
 
@@ -66,6 +70,8 @@ body {
 .skill>a{
   padding-top: 0px !important;
   padding-bottom: 0px !important;
+  padding-right: 0px !important;
+  padding-left: 10px !important;
   margin-bottom: 1px !important;
   font-size: 12px !important;
 }
@@ -113,6 +119,7 @@ hr{
   margin-left: 10px;
   padding-top: 0px;
   margin-right: -5px;
+  text-transform: capitalize;
 }
 .list-group-item{
   padding-left: 8px !important;
@@ -160,6 +167,30 @@ hr{
 .whitelink:hover{
   color: #ffffff;
 }
+
+#author{
+  color: white;
+}
+#menusidebar{
+    position: relative;
+}
+#skills{
+    position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .stickyskills{
+    position: fixed !important;
+    top: 20px !important;
+    right: 15px !important;
+  }
+  .stickymenu{
+    position: fixed !important;
+    top: 20px;
+    left: 15px;
+  }
+}
+
 /*
  * Off Canvas
  * --------------------------------------------------
