@@ -36,6 +36,8 @@ function toggletree(element){ // needs to be passed elements of class .tree-togg
     $(element).children('span').toggleClass('glyphicon-triangle-right');
 }
 function cleanhighlighting(skillclick){//skillclick=true if a skill was clicked, false if experience clicked
+    
+    $('.skillselect').css('background-color','#009688');
     $('.list-group-item').css('border-left','0px solid');
     $('.skill').css('border-left','0px solid');
     $('.skill').css('margin-left','0px');
@@ -230,6 +232,7 @@ $(document).ready(function() {
         var curHeight = $('.jumbotron').outerHeight();
         $('.jumbotron').css('height', curHeight);
         $('.tofadeonclick, #menubutton').toggle("fade",200);
+        $("#skillone").trigger( "click" );
 
         setTimeout(function(){ 
             var jumbo = $('.jumbotron');
@@ -329,6 +332,7 @@ $(document).ready(function() {
         var thiselement=$(this);
         setTimeout(function(){
             highlight(thiselement.parent('.list-group-item'));
+            thiselement.css('background-color','#3F51B5');
             var classList =thiselement.attr('class').split(/\s+/);
             classList.splice(0,2);
             $.each(classList, function(index, item){
