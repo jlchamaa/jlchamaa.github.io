@@ -132,15 +132,7 @@ $(document).ready(function() {
     
     //initialize everything
     var radioCur="resu";
-    $('.ui-loader').remove();
-    $("#masterrow").hide();
-    $("#abourow").hide();
-    $("#credrow").hide();
-    $("#persrow").hide();
-    $("#pdfrrow").hide();
-    $("#getirow").hide();
-    $("#menubutton").hide();
-    $("#dotnav").hide();
+    
 
     var scrolltimes=0;
     //scrolling rules
@@ -308,16 +300,16 @@ $(document).ready(function() {
             console.log(radioValue);
 
             if(radioValue=='abou'){
-               window.location = "./about";
+               window.location = "../about";
             }
             if(radioValue=='port'){
-               window.location = "./portfolio";
+               window.location = "../portfolio";
             }
             if(radioValue=='pdfr'){
-               window.location = "./pdfresume";
+               window.location = "../pdfresume";
             }
             if(radioValue=='cred'){
-               window.location = "./credits";
+               window.location = "../credits";
             }
             
         });
