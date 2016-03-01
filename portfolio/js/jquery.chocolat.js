@@ -132,34 +132,55 @@
 
             this.settings.currentImage = i;
             this.description();
-            this.pagination();
+            //this.pagination();
             this.arrows();
 
             this.storeImgSize(imgLoader, i);
             fitting = this.fit(i, that.settings.container);
 
-            return this.center(
+            this.capcenter(
                 fitting.width,
                 fitting.height,
                 fitting.left,
                 fitting.top,
                 0
             );
+            return this.piccenter(
+                fitting.width,
+                fitting.height,
+                fitting.left,
+                fitting.top,
+                0
+            );
+                        
         },
 
-        center : function(width, height, left, top, duration) {
-
+        piccenter : function(width, height, left, top, duration) {
+            var that=this;
+            var midline=$(that.settings.container).width()/2;
             return this.elems.content
                 .css('overflow', 'visible')
                 .animate({
                     'width'  :width,
                     'height' :height,
-                    'left'   :left,
+                    'left'   :midline-width-5,
                     'top'    :top
                 }, duration)
                 .promise();
         },
-
+        capcenter : function(width, height, left, top, duration) {
+            var that=this;
+            var midline=$(that.settings.container).width()/2;
+            return this.elems.bottom
+                .css('overflow', 'visible')
+                .animate({
+                    'width'  :width,
+                    'height' :height,
+                    'left'   :midline+5,
+                    'top'    :top
+                }, duration)
+                .promise();
+        },
         appear : function(i) {
             var that = this;
             clearTimeout(this.settings.timer);
@@ -390,12 +411,12 @@
             this.elems.bottom = $('<div/>', {
                 'class' : 'chocolat-bottom'
             }).appendTo(this.elems.wrapper);
-
+            
             this.elems.fullscreen = $('<span/>', {
                 'class' : 'chocolat-fullscreen'
             }).appendTo(this.elems.bottom);
 
-            this.elems.description = $('<span/>', {
+            this.elems.description = $('<div/>', {
                 'class' : 'chocolat-description'
             }).appendTo(this.elems.bottom);
 
@@ -576,7 +597,8 @@
                 }
                 that.debounce(50, function() {
                     fitting = that.fit(that.settings.currentImage, that.settings.container);
-                    that.center(fitting.width, fitting.height, fitting.left, fitting.top, 0);
+                    that.piccenter(fitting.width, fitting.height, fitting.left, fitting.top, 0);
+                    that.capcenter(fitting.width, fitting.height, fitting.left, fitting.top, 0);
                     that.zoomable();
                 });
             });
