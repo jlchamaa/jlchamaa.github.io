@@ -13,7 +13,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<img src="/assets/jl100.jpg" width="50" height="50" class="rounded-circle navbar-brand d-inline-block align-top" alt="">
-			  <a class="navbar-brand" href=/>Jean-Luc Chamaa</a>
+			  <a class="navbar-brand" href={{ site.baseurl }}{% link index.md %}>Jean-Luc Chamaa</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
@@ -24,16 +24,16 @@
 					  Projects
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <a class="dropdown-item" href=/projects/led>LED SuperController</a>
-					  <a class="dropdown-item" href=/projects/mirror>Infinity Mirror</a>
-					  <a class="dropdown-item" href=/projects/sportsmap>Sports Map</a>
-					  <a class="dropdown-item" href=/projects/ardopilot>ArdoPilot</a>
-					  <a class="dropdown-item" href=/projects/ecochella>Ecochella Power Bike</a>
-					  <a class="dropdown-item" href=/projects/cubetimer>Cube Time</a>
-					  <a class="dropdown-item" href=/projects/wickedwinch>Wicked Winch</a>
-					  <a class="dropdown-item" href=/projects/soundscape>Soundscape</a>
+					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/led.md %}>LED SuperController</a>
+					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/mirror.md %}>Infinity Mirror</a>
+					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/sportsmap.md %}>Sports Map</a>
+					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/ardopilot.md %}>ArdoPilot</a>
+					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/ecochella.md %}>Ecochella Power Bike</a>
+					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/cubetimer.md %}>Cube Time</a>
+					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/wickedwinch.md %}>Wicked Winch</a>
+					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/soundscape.md %}>Soundscape</a>
 					  <div class="dropdown-divider"></div>
-					  <a class="dropdown-item" href=/projects>All Projects</a>
+					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/index.md %}>All Projects</a>
 					</div>
 				  </li>
   				  <li class="nav-item dropdown">
@@ -54,13 +54,13 @@
 					  Hobbies
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href=/hobbies/JLC>Fire Mixtape</a>
-                        <a class="dropdown-item" href=/hobbies/UCLAmap>UCLA Map</a>
-                        <a class="dropdown-item" href=/hobbies/basketball>Basketball</a>
-                        <a class="dropdown-item" href=/hobbies/chess>Chess</a>
-                        <a class="dropdown-item" href=/hobbies/travel>Travel</a>
+                        <a class="dropdown-item" href={{ site.baseurl }}{% link hobbies/JLC.md %}>Fire Mixtape</a>
+                        <a class="dropdown-item" href={{ site.baseurl }}{% link hobbies/UCLAmap.md %}>UCLA Map</a>
+                        <a class="dropdown-item" href={{ site.baseurl }}{% link hobbies/basketball.md %}>Basketball</a>
+                        <a class="dropdown-item" href={{ site.baseurl }}{% link hobbies/chess.md %}>Chess</a>
+                        <a class="dropdown-item" href={{ site.baseurl }}{% link hobbies/travel.md %}>Travel</a>
 					  <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href=/hobbies/>All Hobbies</a>
+                      <a class="dropdown-item" href={{ site.baseurl }}{% link hobbies/index.md %}>All Hobbies</a>
 					</div>
 				  </li>
 				  <li class="nav-item">
@@ -72,8 +72,7 @@
             <div id="content" class="container">
                 <div class="row">
                     <div class="col text-center">
-			            <h2 id="four-oh-four">Four oh Four!</h2>
-
+			            {{content}}
                     </div>
                 </div>
             </div>
