@@ -24,7 +24,7 @@ The first, easiest, and most critical portion of the solve is to get 'the cross'
 <div style='position:relative;padding-bottom:54%'><video style='width:100%;height:100%;position:absolute;top:0;left:0' preload="auto" loop="loop" autoplay="autoplay" controls>
 <source src="https://i.imgur.com/96IWLB5.mp4">
 </video></div>
-This portion of the solve doesn't really depend on rote memorization of algs, but on a good geometrical understanding of the cube.  Typically, a speedcuber is allowed 15 seconds to inspect the cube before starting the timer and beginning a solve. This time is usually spent devising a plan to create the cross. Being able to do this well requires the ability to look several moves ahead and understand the cube mechanics well.
+This portion of the solve doesn't really depend on rote memorization of algs, but on a good geometrical understanding of the cube.  Typically, a speedcuber is allowed 15 seconds to inspect the cube before starting the timer and beginning a solve. The majority of this time is usually spent devising a plan to create the cross. Being able to do this well requires the ability to look several moves ahead and understand the cube mechanics well.
 
 ---
 
@@ -44,7 +44,7 @@ Do this for all four corners, and you'll have the first two layers solved, and y
 ---
 
 #### Top Cross
-The top cross is where my method begins to deviate from the standard Fridrich method.  True speedcuberssolve the top cross and the top corners at the same time. To do both in one quick algorithm requires the memorization of [57](https://ruwix.com/the-rubiks-cube/advanced-cfop-fridrich/orient-the-last-layer-oll/) algorithms.  Lots of people can do it, but by sperating the two, I can do each cross and corners using only two short algs for each.
+The top cross is where my method begins to deviate from the standard Fridrich method.  True speedcubers orient the top cross and the top corners at the same time. To do both in one quick algorithm requires the memorization of [57](https://ruwix.com/the-rubiks-cube/advanced-cfop-fridrich/orient-the-last-layer-oll/) algorithms.  Lots of people can do it, but by separating the two, I can do each cross and corners using only two short algs for each.
 For the top cross, you can, from any starting point, use 
 ##### F R U R' U' F'
 <div style='position:relative;padding-bottom:54%'><video style='width:100%;height:100%;position:absolute;top:0;left:0' preload="auto" loop="loop" autoplay="autoplay" controls>

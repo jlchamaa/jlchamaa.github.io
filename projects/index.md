@@ -1,4 +1,4 @@
 ---
 layout: default
-permalink: /projects
 ---
+#ALL PROJECTS

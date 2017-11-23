@@ -2,5 +2,5 @@
 layout: default
 permalink: /
 ---
-# HOMEPAGE 
-Things are things
+# THE WEBSITE IS UNDER CONSTRUCTION
+Some pages are empty and some are incomplete.  But the structure and linking ought to work.
