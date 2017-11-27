@@ -25,16 +25,9 @@
 					  Projects
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/led.md %}>LED SuperController</a>
-					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/mirror.md %}>Infinity Mirror</a>
-					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/sportsmap.md %}>Sports Map</a>
-					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/ardopilot.md %}>ArdoPilot</a>
-					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/ecochella.md %}>Ecochella Power Bike</a>
-					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/cubetimer.md %}>Cube Time</a>
-					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/wickedwinch.md %}>Wicked Winch</a>
-					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/soundscape.md %}>Soundscape</a>
-					  <div class="dropdown-divider"></div>
-					  <a class="dropdown-item" href={{ site.baseurl }}{% link projects/index.md %}>All Projects</a>
+                        {% for item in site.projects %}
+                        <a class="dropdown-item" href={{ site.baseurl  }}{{ item.permalink }}>{{item.title}}</a>
+                        {% endfor %}
 					</div>
 				  </li>
   				  <li class="nav-item dropdown">
@@ -42,13 +35,9 @@
 					  Experience
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <a class="dropdown-item" href="#">NAVAIR</a>
-					  <a class="dropdown-item" href="#">UCLA</a>
-					  <a class="dropdown-item" href="#">Thales</a>
-					  <a class="dropdown-item" href="#">ASME</a>
-					  <a class="dropdown-item" href="#">Tech Camp</a>
-					  <div class="dropdown-divider"></div>
-					  <a class="dropdown-item" href="#">All Experience</a>
+                        {% for item in site.experience %}
+                        <a class="dropdown-item" href={{ site.baseurl  }}{{ item.permalink }}>{{item.title}}</a>
+                        {% endfor %}
 					</div>
 				  </li>
   				  <li class="nav-item dropdown">
@@ -56,14 +45,9 @@
 					  Hobbies
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href={{ site.baseurl }}{% link hobbies/JLC.md %}>Fire Mixtape</a>
-                        <a class="dropdown-item" href={{ site.baseurl }}{% link hobbies/UCLAmap.md %}>UCLA Map</a>
-                        <a class="dropdown-item" href={{ site.baseurl }}{% link hobbies/basketball.md %}>Basketball</a>
-                        <a class="dropdown-item" href={{ site.baseurl }}{% link hobbies/chess.md %}>Chess</a>
-                        <a class="dropdown-item" href={{ site.baseurl }}{% link hobbies/cubes.md %}>Cubes</a>
-                        <a class="dropdown-item" href={{ site.baseurl }}{% link hobbies/travel.md %}>Travel</a>
-					  <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href={{ site.baseurl }}{% link hobbies/index.md %}>All Hobbies</a>
+                        {% for item in site.hobbies %}
+                        <a class="dropdown-item" href={{ site.baseurl  }}{{ item.permalink }}>{{item.title}}</a>
+                        {% endfor %}
 					</div>
 				  </li>
 				  <li class="nav-item">
