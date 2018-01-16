@@ -5,18 +5,17 @@ title: Cubes
 ---
 # {{page.title}}
 <div style='position:relative;padding-bottom:54%'><video style='width:100%;height:100%;position:absolute;top:0;left:0' preload="auto" loop="loop" autoplay="autoplay" controls>
-<source src="https://giant.gfycat.com/PettyLightheartedFalcon.webm">
+<!--source src="https://giant.gfycat.com/PettyLightheartedFalcon.webm"-->
+<source src="https://giant.gfycat.com/UnderstatedGargantuanLarva.webm">
 </video></div>
-R2 U' L2 D2 B2 F2 D L2 R2 B D' F R D R U F'
-
-38.58 seconds
+Poly Cubed: Pomona, CA -- 28.67 seconds
 
 ---
 
 ### Fishy Method
 
 I've been solving 3x3 Rubik's Cubes for 10+ years now.  My methodology, a semi-custom Fridrich derivative I call 'Fishy Method' is far from optimal, but I've come to enjoy the creative freedom it lends me, and the relative few amount of algorithms that I need to commit to memory.
-My current average solve time is around 35 seconds, which is hardly record shattering, but fast enough for a decent party trick. (I party with nerds)
+My current average solve time is around 30 seconds, which is hardly record shattering, but fast enough for a decent party trick. (I party with nerds)
 
 ---
 
