@@ -3,22 +3,20 @@
 	width:200px;
 	height:200px;
 	border-width:5px;
-	border-color:black;
+	border-color:white;
 	border-style:solid;
-	background: 
-	/* top, transparent red, faked with gradient */ 
-	linear-gradient(
-	      rgba(0, 50, 255, 0.5), 
-	      rgba(0, 50, 255, 0.5)
-	),
-	/* bottom, image */
-	url('{{ include.imagelink }}');
-
+    {{ include.background }}
 	background-position: center center;
+    background-clip: content-box;
+    padding: 0px;
 	color: white;
+    font-size: x-large;
+}
+a:hover{
+    text-decoration: none; !important
 }
 
 </style>
-<div class="cls{{  include.name | slugify }}">
-	<div style="position:relative;top:150px;"> {{ include.name }} </div>
+<div class="col-sm-4 cls{{  include.name | slugify }}">
+    <a style="display:block;color:white;height:100%;width:100%;" href="{{ include.link  }}"><strong>{{include.name}}</strong></a>
 </div>

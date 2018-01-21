@@ -2,6 +2,8 @@
 layout: default
 permalink: /hobbies/cubes
 title: Cubes
+imagelink: "https://i.imgur.com/8fj4UDXl.png"
+tilecolor: "231, 76, 60"
 ---
 # {{page.title}}
 <div style='position:relative;padding-bottom:54%'><video style='width:100%;height:100%;position:absolute;top:0;left:0' preload="auto" loop="loop" autoplay="autoplay" controls>

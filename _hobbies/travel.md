@@ -2,6 +2,8 @@
 layout: default
 permalink: /hobbies/travel
 title: Travel
+imagelink: "https://i.imgur.com/Cinryz6.png"
+tilecolor: "142, 68, 173"
 ---
 # Travel 
 

@@ -2,6 +2,8 @@
 layout: default
 permalink: /hobbies/basketball
 title: Basketball
+imagelink: /assets/bball1.jpg
+tilecolor: "255,140,0"
 ---
 # {{page.title}}
 

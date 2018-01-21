@@ -2,6 +2,8 @@
 layout: default
 permalink: /hobbies/chess
 title: Chess
+imagelink: "https://i.imgur.com/JiHQDDhm.png"
+tilecolor: "50,50,50"
 ---
 # {{page.title}}
 I've only started getting back into chess in 2017, but I've found great joy in getting more experience behind the board and learning from players better than me.

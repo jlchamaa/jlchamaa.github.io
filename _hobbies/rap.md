@@ -2,6 +2,8 @@
 layout: default
 permalink: /hobbies/Rap
 title: Rap
+imagelink: "https://i.imgur.com/3Mjvv5Il.png"
+tilecolor: "46, 204, 113"
 ---
 
 # Rap
