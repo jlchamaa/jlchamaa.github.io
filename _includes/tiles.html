@@ -1,6 +1,5 @@
 <style>
 .cls{{  include.name | slugify }} {
-	width:200px;
 	height:200px;
 	border-width:5px;
 	border-color:white;
@@ -17,6 +16,6 @@ a:hover{
 }
 
 </style>
-<div class="col-sm-4 cls{{  include.name | slugify }}">
+<div class="col-sm-6 col-lg-4 cls{{  include.name | slugify }}">
     <a style="display:block;color:white;height:100%;width:100%;" href="{{ include.link  }}"><strong>{{include.name}}</strong></a>
 </div>

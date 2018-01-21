@@ -2,14 +2,14 @@
 layout: default
 permalink: /hobbies/basketball
 title: Basketball
-imagelink: /assets/bball1.jpg
+imagelink: "https://i.imgur.com/caF6pcV.jpg"
 tilecolor: "255,140,0"
 ---
 # {{page.title}}
 
 I've been playing basketball for as long as I can remember
 
-<img src="/assets/bball1.jpg" style="width:100%; max-width: 600px;"/>
+<img src="https://i.imgur.com/caF6pcV.jpg" style="width:100%; max-width: 600px;"/>
 
 
 I still believe that this is the best bounce pass I've ever thrown.  And Mom got this glorious evidence.

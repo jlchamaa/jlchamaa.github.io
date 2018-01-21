@@ -2,7 +2,7 @@
 layout: default
 permalink: /hobbies/chess
 title: Chess
-imagelink: "https://i.imgur.com/JiHQDDhm.png"
+imagelink: "https://i.imgur.com/JiHQDDhl.png"
 tilecolor: "50,50,50"
 ---
 # {{page.title}}

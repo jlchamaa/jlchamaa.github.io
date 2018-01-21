@@ -38,11 +38,11 @@ Therefore, with the LEDs are turned off inside the box, a bright room turns the 
 #### More pics?
 You got it.
 
-<img src="/assets/mirrorApart.jpg" style="width:100%; max-width: 600px;"/>
+<img src="https://i.imgur.com/2drNVJm.jpg" style="width:100%; max-width: 600px;"/>
 
 **Without the rear mirror**
 
-<img src="/assets/mirrorResistor.jpg" style="width:100%; max-width: 600px;"/>
+<img src="https://i.imgur.com/Fpqx8Iy.jpg" style="width:100%; max-width: 600px;"/>
 
 **1000uF capacitor on the wall-wart jack because NeoPixels are finicky and will fry if subjected to a voltage spike upon plug-in. 470 Ohm pull-down resistor on the data line to prevent any floating voltage silliness.**
 
