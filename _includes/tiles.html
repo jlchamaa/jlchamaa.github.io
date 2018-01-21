@@ -1,0 +1,24 @@
+<style>
+.cls{{  include.name | slugify }} {
+	width:200px;
+	height:200px;
+	border-width:5px;
+	border-color:black;
+	border-style:solid;
+	background: 
+	/* top, transparent red, faked with gradient */ 
+	linear-gradient(
+	      rgba(0, 50, 255, 0.5), 
+	      rgba(0, 50, 255, 0.5)
+	),
+	/* bottom, image */
+	url('{{ include.imagelink }}');
+
+	background-position: center center;
+	color: white;
+}
+
+</style>
+<div class="cls{{  include.name | slugify }}">
+	<div style="position:relative;top:150px;"> {{ include.name }} </div>
+</div>

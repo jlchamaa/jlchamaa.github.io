@@ -2,6 +2,7 @@
 layout: default
 permalink: /hobbies/UCLAmap
 title: UCLA Map
+imagelink: https://i.imgur.com/8RzcnUtm.jpg
 ---
 #  {{page.title}}
 I'm a big fan of maps, and all I wanted to hang on the wall of my room was an interesting map of my alma mater -- something unique!  I looked on Etsy and Society6 and a bunch of other custom art websites, but I couldn't find anything that fit my fancy.  So I decided to make my own!

@@ -2,5 +2,11 @@
 layout: default
 permalink: /
 ---
-# THE WEBSITE IS UNDER CONSTRUCTION
-Some pages are empty and some are incomplete.  But the structure and linking ought to work.
+# THIS PAGE IS UNDER CONSTRUCTION
+### The nav bar works, and almost all pages are live 
+{% for item in site.hobbies %}
+{% capture namer %}{{ item.title }}{% endcapture %}
+{% capture linky %}{{ item.imagelink }}{% endcapture %}
+{% include tiles.html name=namer imagelink=linky %}
+{% endfor %}
+
