@@ -3,6 +3,8 @@ layout: default
 gitlink: https://github.com/jlchamaa/ArdoPilot
 title: ArdoPilot
 permalink: /projects/ardopilot
+imagelink: "https://i.imgur.com/OioFC2Vl.jpg"
+tilecolor: "224, 130, 131"
 ---
 
 # [ArdoPilot](https://github.com/jlchamaa/ArdoPilot)

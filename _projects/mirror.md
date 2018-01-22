@@ -2,6 +2,8 @@
 layout: default
 permalink: /projects/mirror
 title: Infinity Mirror
+imagelink: "https://i.imgur.com/sHOmgG1m.png"
+tilecolor: "0,0,0"
 ---
 # Infinity Mirror
 

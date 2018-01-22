@@ -2,12 +2,14 @@
 layout: default
 permalink: /projects/soundscape
 title: SoundScape
+imagelink: "https://i.imgur.com/LKHNFGsm.png"
+tilecolor: "37, 116, 169"
 ---
 
 # Soundscape
 IDEAHacks, the premier west coast hardware hackathon, is hosted in Ackerman Grand Ballroom at UCLA. On a 36-hour time limit, along with two of my UCLA Aerospace engineering friends and a computer scientist from USC, we developed **Soundscape**!  We placed [third](https://www.facebook.com/ideahacks.la/photos/a.1456888661229688.1073741828.1451652401753314/1653275828257636/) in the competition and won Fitbits!
 
-<img src="https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/12440447_1653275828257636_3927811303484037364_o.jpg?oh=cab7d738f4660a77a8527e22b56073b1&oe=5A9993AA" style="width:100%; max-width: 600px;"/>
+<img src="https://i.imgur.com/LKHNFGs.png" style="width:100%; max-width: 600px;"/>
 
 ### What does it do?
 

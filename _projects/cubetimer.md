@@ -3,6 +3,8 @@ layout: default
 gitlink: https://github.com/jlchamaa/CLImer
 title: CLI Cube Timer
 permalink: /projects/cubetimer
+imagelink: "https://i.imgur.com/DdsDWbXm.png"
+tilecolor: "1,50,67"
 ---
 
 # Command Line Cube Timer

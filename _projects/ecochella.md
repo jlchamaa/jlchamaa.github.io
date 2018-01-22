@@ -2,6 +2,8 @@
 layout: default
 permalink: /projects/ecochella
 title: Ecochella Power Bicycle
+imagelink: "https://i.imgur.com/8V6LL7c.jpg"
+tilecolor: "235, 151, 78"
 ---
 
 # Ecochella Power Bicycle

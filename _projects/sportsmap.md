@@ -2,6 +2,8 @@
 layout: default
 permalink: /projects/sportsmap
 title: Sports Map
+imagelink: "https://i.imgur.com/JVPQfrsl.jpg"
+tilecolor: "207, 0, 15"
 ---
 # LED Live Sports Map
 

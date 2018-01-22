@@ -2,6 +2,8 @@
 layout: default
 permalink: /projects/wickedwinch
 title: Wicked Winch
+imagelink: "https://i.imgur.com/pmsGC4Fl.png"
+tilecolor: "103, 65, 114"
 ---
 
 # MAE 162D&E: Mechanical Design Capstone
