@@ -20,15 +20,18 @@ This was one of the first actual engineering projects I embarked on in school an
 </video></div>
 
 **Our bike, in all its taped up glory, fully operational**
+{: .mycaption}
 
 ---
 
 <img src="https://i.imgur.com/JbJkHYN.jpg" style="width:100%; max-width: 600px;"/>
 
 **My excellent teammate Jonathan making everything work**
+{: .mycaption}
 
 ---
 
 <img src="https://i.imgur.com/Bu1EBLI.jpg" style="width:100%; max-width: 600px;"/>
 
 **An incredibly photogenic guy creating 100+ Watts of pedal power with our bike**
+{: .mycaption}

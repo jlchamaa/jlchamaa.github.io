@@ -63,12 +63,16 @@ The cheapest way I could find to get my LEDs spaced out as I desired was to spli
 <img src="https://i.imgur.com/JVPQfrsh.jpg" style="width:100%; max-width: 600px;"/>
 
 **6 solder joints per LED x 40 LEDs = 240 solder joints**
+{: .mycaption}
+
 
 Once they were all wired together to fit a single path, it was all about lining them up with the cities and attaching them with duct tape.
 
 <img src="https://i.imgur.com/ICUSCSnh.jpg" style="width:100%; max-width: 600px;"/>
 
 **DUCT TAPE FTW**
+{: .mycaption}
+
 
 #### Software
 
@@ -86,5 +90,7 @@ Node -> Python -> Arduino
 <img src="https://i.imgur.com/8jW3vev.png" style="width:100%; max-width: 600px;"/>
 
 **A quiet sports night with only a Wolves v. Blazers Matchup**
+{: .mycaption}
+
 
 The Python script runs a Node script that outputs scoring events, which are piped over USB to an Arduino ready to receive the messages and flash the LEDs.

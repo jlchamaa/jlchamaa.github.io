@@ -10,6 +10,8 @@ tilecolor: "231, 76, 60"
 <source src="https://giant.gfycat.com/UnderstatedGargantuanLarva.webm">
 </video></div>
 Poly Cubed: Pomona, CA -- 28.67 seconds
+{: .mycaption}
+
 
 ---
 

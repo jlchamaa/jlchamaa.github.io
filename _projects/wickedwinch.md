@@ -9,6 +9,7 @@ tagline: "UCLA Capstone Project: Autonomus Robot"
 <img src="https://i.imgur.com/ugMtKiZ.jpg" style="width:100%; max-width: 600px;"/>
 
 **My baby**
+{: .mycaption}
 
 ### The Project
 In January 2016, the UCLA Mechanical Engineering Senior Class was split into groups of five, and assigned a task:
@@ -27,12 +28,16 @@ In January 2016, the UCLA Mechanical Engineering Senior Class was split into gro
 <img src="https://i.imgur.com/iSYXKaR.png" style="width:100%; max-width: 600px;"/>
 
 **The Course**
+{: .mycaption}
+
 
 ---
 
 <img src="https://i.imgur.com/MXwZxM3.png" style="width:100%; max-width: 600px;"/>
 
 **The Best Team Ever**
+{: .mycaption}
+
  
  ---
 
@@ -56,12 +61,16 @@ We had to have an accurate CAD by the end of 162D, which we would then build dur
 <img src="https://i.imgur.com/bCeTmFF.png" style="width:100%; max-width: 600px;"/>
 
 **Full Solidworks CAD**
+{: .mycaption}
+
 
 ---
 
 <img src="https://i.imgur.com/WvFLY3z.png" style="width:100%; max-width: 600px;"/>
 
 **Solidworks CAD of the Launching Mechanism**
+{: .mycaption}
+
 
 ### Building & Programming
 
@@ -72,24 +81,32 @@ The launching mechanism was a half gear which, via a geared winch and fishing li
 </video>
 
 **Launching mechanism, without the release**
+{: .mycaption}
+
 
 ---
 
 <img src="https://i.imgur.com/pmsGC4F.png" style="width:100%; max-width: 600px;"/>
 
 **The pyhsical product**
+{: .mycaption}
+
 
 ---
 
 <img src="https://i.imgur.com/8TR5Exh.png" style="width:100%; max-width: 600px;"/>
 
 **The brains of the robot was a school-provided NI MyRIO, which -- of course -- had to be programmed in LabView**
+{: .mycaption}
+
 
 ---
 
 <img src="https://i.imgur.com/RS2gHWs.png" style="width:100%; max-width: 600px;"/>
 
 **A statechart was used to step the robot through the phases of its journey**
+{: .mycaption}
+
 
 ---
 
@@ -99,3 +116,5 @@ We built the robot to spec, and managed to use only $275 in parts, $100 under bu
 
 <iframe width="480" height="270" src="https://www.youtube.com/embed/4J1Lj29G1X0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 **A clean practice run in the lab!  The golf ball hits the target!**
+{: .mycaption}
+

@@ -24,5 +24,6 @@ My rating on Lichess is around 1600 for correspondance games, and significantly 
     ></iframe>
 </div>
 
-Challenge me to a game! 
-[https://lichess.org/@/jlchamaa](https://lichess.org/@/jlchamaa)
+Challenge me to a game! [https://lichess.org/@/jlchamaa](https://lichess.org/@/jlchamaa)
+{: .mycaption}
+

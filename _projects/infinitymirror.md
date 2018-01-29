@@ -26,6 +26,7 @@ Therefore, with the LEDs are turned off inside the box, a bright room turns the 
 </video>
 
 **The LEDs are 4 feet of [Adafruit NeoPixels](https://www.adafruit.com/product/2954), an easy to use addressable LED strip.  They can all be individually addressed by a single digital I/O pin on an Arduino.**
+{: .mycaption}
 
 ---
 
@@ -33,19 +34,23 @@ Therefore, with the LEDs are turned off inside the box, a bright room turns the 
 <img src="https://cdn-shop.adafruit.com/970x728/2590-01.jpg" style="width:100%; max-width: 600px;"/>
 
 **The microcontroller is an [Adafruit Metro Mini](https://www.adafruit.com/product/2590), a great Arduino Uno alternative, with the same ATMega 328 chip, but in a tiny breadboard friendly package.**
+{: .mycaption}
 
 ---
 
 #### More pics?
 You got it.
+{: .mycaption}
 
 <img src="https://i.imgur.com/2drNVJm.jpg" style="width:100%; max-width: 600px;"/>
 
 **Without the rear mirror**
+{: .mycaption}
 
 <img src="https://i.imgur.com/Fpqx8Iy.jpg" style="width:100%; max-width: 600px;"/>
 
 **1000uF capacitor on the wall-wart jack because NeoPixels are finicky and will fry if subjected to a voltage spike upon plug-in. 470 Ohm pull-down resistor on the data line to prevent any floating voltage silliness.**
+{: .mycaption}
 
 ---
 
@@ -54,3 +59,4 @@ You got it.
 </video>
 
 **The full animation program!**
+{: .mycaption}

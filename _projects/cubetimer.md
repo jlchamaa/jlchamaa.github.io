@@ -20,6 +20,8 @@ But I like it, so that's all that matters.
 </video></div>
 
 **A proof of concept, showing the regulation maximum 15 second countdown, an example 10.23 second solve, the subsequent storing of the solve and its associated scramble and averages, and its deletion**
+{: .mycaption}
+
 #### Featues
 1. Ability to track any number of sessions, with independent times, averages, and scrambles.
 2. Ability to +2, DNF, or delete any solve.

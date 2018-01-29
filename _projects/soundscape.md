@@ -18,7 +18,9 @@ Soundscape is a tool that allows the speakers in your home or office to adjust t
 <source src="/assets/soundscape.mp4">
 </video></div>
 
-And here's the rushed 240p video evidence of it in action
+**And here's the rushed 240p video evidence of it in action**
+{: .mycaption}
+
 #### How does it work?
 Before I tell you, do you promise not to judge?
 
