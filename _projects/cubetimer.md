@@ -1,14 +1,12 @@
 ---
-layout: default
+layout: project
 gitlink: https://github.com/jlchamaa/CLImer
 title: CLI Cube Timer
 permalink: /projects/cubetimer
 imagelink: "https://i.imgur.com/DdsDWbXm.png"
-tilecolor: "1,50,67"
+tilecolor: "142, 68, 173"
+tagline: Python & ncurses cube timer for the command line
 ---
-
-# Command Line Cube Timer
-
 <img src="https://i.imgur.com/DdsDWbX.png" style="width:100%; max-width: 600px;"/>
 
 Written in Python and using the ncurses terminal painting library, the CLI cube timer (a.k.a. "CLImer") is the best way to record and store your cube solves while never leaving the comfort of the shell.  This tool merges the required tools of a niche hobby with the required environment of another niche hobby, leaving a target audience of literally just myself. 

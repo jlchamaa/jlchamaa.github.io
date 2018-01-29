@@ -1,3 +1,5 @@
+host: 0.0.0.0
+port: 4000
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -13,20 +15,23 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Jean-Luc Chamaa
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+ Jean-Luc is a mechanical engineer by training, a software engineer by passion, and a full-on nerd by birth. 
+bio: Software Engineer, UCLA Mechanical Engineering Alumnus, maker, burrito connoisseur, and undisputed bona-fide nerd. 
+email: jlchamaa@gmail.com
+facebook: jlchamaa
+linkedin: jlchamaa
+instagram: jlchamaa
+github-url: jlchamaa
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+logo: "/assets/img/myProf.png"
+background: '/assets/img/mysmallbg.jpg'
+tiled_bg:  false   # Set this true if you want to tile your background image, otherwise it will be covered
 
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
 
 collections:
   projects:

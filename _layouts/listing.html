@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<head>
+    {% include head.html %}
+</head>
+<body>
+    {% include nav.html %}
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="wrapper animated fadeIn">
+            <div class="content">
+                <div class="post-title">
+                    <h1>{{ page.title }}</h1>
+                    <a class="btn zoombtn" href="/">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </div>
+                <div class="post-list">
+                    <ul id="listing">
+                    {% case page.title %}
+                        {% when 'Experience' %}
+                            {% for post in site.experience %} 
+                                {% capture backer %}background-image:linear-gradient(rgba({{ post.tilecolor }}, 1.0), rgba({{ post.tilecolor }}, 0.8)),url('{{ post.imagelink }}');{% endcapture %}
+                                <li style="{{ backer }}" data-wow-duration="1.5s">
+                                    <a class="zoombtn" href="{{ post.permalink }}">
+                                        {{ post.title }}
+                                        <p>&nbsp;</p>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        {% when 'Hobbies' %}
+                            {% for post in site.hobbies %} 
+                                {% capture backer %}background-image:linear-gradient(rgba({{ post.tilecolor }}, 1.0), rgba({{ post.tilecolor }}, 0.8)),url('{{ post.imagelink }}');{% endcapture %}
+                                <li style="{{ backer }}" data-wow-duration="1.5s">
+                                    <a class="zoombtn" href="{{ post.permalink }}">
+                                        {{ post.title }}
+                                        <p>&nbsp;</p>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        {% when 'Projects' %}
+                            {% for post in site.projects %} 
+                                {% capture backer %}background-image:linear-gradient(rgba({{ post.tilecolor }}, 1.0), rgba({{ post.tilecolor }}, 0.8)),url('{{ post.imagelink }}');{% endcapture %}
+                                <li style="{{ backer }}" data-wow-duration="1.5s">
+                                    <a class="zoombtn" href="{{ post.permalink }}">
+                                        {{ post.title }}
+                                        <p>{{ post.tagline }}</p>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        {% else %}
+                    {% endcase %}
+                    </ul>
+                    <h1> {{ list }}</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    {% include scripts.html %}
+    <script src="/assets/js/wow.min.js"></script>
+    <script type="text/javascript">(new WOW).init();</script>
+</body>
+</html>

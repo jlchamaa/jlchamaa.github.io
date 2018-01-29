@@ -1,14 +1,11 @@
 ---
-layout: default
+layout: project
 permalink: /projects/wickedwinch
-title: Wicked Winch
+title: The Wicked Winch
 imagelink: "https://i.imgur.com/pmsGC4Fl.png"
-tilecolor: "103, 65, 114"
+tilecolor: "190, 144, 212"
+tagline: "UCLA Capstone Project: Autonomus Robot"
 ---
-
-# MAE 162D&E: Mechanical Design Capstone
-# The Wicked Winch
-
 <img src="https://i.imgur.com/ugMtKiZ.jpg" style="width:100%; max-width: 600px;"/>
 
 **My baby**

@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: hobby
 permalink: /hobbies/chess
 title: Chess
 imagelink: "https://i.imgur.com/JiHQDDhl.png"
-tilecolor: "50,50,50"
+tilecolor: "150,150,150"
 ---
-# {{page.title}}
 I've only started getting back into chess in 2017, but I've found great joy in getting more experience behind the board and learning from players better than me.
 
 This is a game I played recently in which I was able to land a bunch of useful tactics.

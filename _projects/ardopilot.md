@@ -1,15 +1,13 @@
 ---
-layout: default
+layout: project
 gitlink: https://github.com/jlchamaa/ArdoPilot
 title: ArdoPilot
 permalink: /projects/ardopilot
 imagelink: "https://i.imgur.com/OioFC2Vl.jpg"
 tilecolor: "224, 130, 131"
+tagline: "A bio-reactive light and media controller"
 ---
-
-# [ArdoPilot](https://github.com/jlchamaa/ArdoPilot)
-
-<iframe src="https://www.youtube-nocookie.com/embed/oJ_n7qzUJ5w?rel=0" style="width:100%; max-width:600px; height:315px;" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oJ_n7qzUJ5w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 During my junior year at UCLA, Thales Avionics hosted an multi-week "Arduino Challenge" on several SoCal campuses that provided teams of students with an Arduino and resources to build a project from scratch.  The project was supposed to address a need in one of the company's many competencies, which are mainly military technologies and avionics.  The Irvine, CA office that was hosting the competition mainly focuses on engineering and manufacturing in-flight entertainment systems for commercial jets.
 While most other entrants worked on projects with a military application, my teammate and I (Team Aluminati) developed a product that augments the audio and video of the in-flight entertainment based upon whether you are awake or asleep.

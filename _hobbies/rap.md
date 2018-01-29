@@ -1,13 +1,10 @@
 ---
-layout: default
+layout: hobby
 permalink: /hobbies/Rap
 title: Rap
 imagelink: "https://i.imgur.com/3Mjvv5Il.png"
 tilecolor: "46, 204, 113"
 ---
-
-# Rap
-
 One of my close friends blew me away when, after his first year of college, he could freestyle rap over any beat.  He told me that I was capable of the same with just a little practice, and he encouraged and coached me through the awkward first learning phases.
 After several months, I had quietly developed a love for the artform, and I felt like I could keep up with him in a cypher.  I took my new skill to UCLA and joined the Bruin Rap club, where I trained with a bunch of incredible rappers who encouraged me further. 
 They suggested I write and record some original songs, which would supplement my raw freestyle skills with a more constrained and deliberate form.

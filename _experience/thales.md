@@ -1,7 +1,9 @@
 ---
-layout: default
+layout: experience
 permalink: /experience/thales
 title: Thales
 imagelink: ""
-tilecolor: "0,0,0"
+tilecolor: "226, 106, 106"
 ---
+## The content is not yet written for this page.
+## Check back soon!

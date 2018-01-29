@@ -1,13 +1,11 @@
 ---
-layout: default
+layout: project
 permalink: /projects/ecochella
 title: Ecochella Power Bicycle
 imagelink: "https://i.imgur.com/8V6LL7c.jpg"
 tilecolor: "235, 151, 78"
+tagline: A bicycle that powers an entire concert by pedalling
 ---
-
-# Ecochella Power Bicycle
-
 <img src="https://i.imgur.com/eXpJG6u.jpg" style="width:100%; max-width: 600px;"/>
 
 UCLA Sustainability runs an annual event called Ecochella, a campus concert that runs entirely on pedal power.  Teams of UCLA engineers design and build bicycles that concert-goers ride to keep the concert powered.

@@ -1,0 +1,42 @@
+	<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+		<button class="dl-trigger">Open Menu</button>
+		<ul class="dl-menu">
+			<li><a href="/">Home</a></li>
+			<li><a href="/about">About</a></li>
+			<li>
+				<a href="#">Experience</a>
+				<ul class="dl-submenu">
+                    {% for post in site.experience %}
+                    <li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                    <li><a href="/experience">All Experience</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Projects</a>
+				<ul class="dl-submenu">
+                    {% for post in site.projects %}
+                    <li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                    <li><a href="/projects">All Projects</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Hobbies</a>
+				<ul class="dl-submenu">
+                    {% for post in site.hobbies %}
+                    <li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                    <li><a href="/hobbies">All Hobbies</a></li>
+				</ul>
+			</li>
+			{% for link in site.data.navigation %}
+		    {% if link.url contains 'http' %}
+		        {% assign domain = '' %}
+		        {% else %}
+		        {% assign domain = site.url %}
+		    {% endif %}
+		    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title }}</a></li>
+		  {% endfor %}
+		</ul><!-- /.dl-menu -->
+	</nav><!-- /.dl-menuwrapper -->

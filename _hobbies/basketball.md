@@ -1,12 +1,11 @@
 ---
-layout: default
+layout: hobby
 permalink: /hobbies/basketball
 title: Basketball
 imagelink: "https://i.imgur.com/caF6pcV.jpg"
 tilecolor: "255,140,0"
+tagline: ""
 ---
-# {{page.title}}
-
 I've been playing basketball for as long as I can remember
 
 <img src="https://i.imgur.com/caF6pcV.jpg" style="width:100%; max-width: 600px;"/>

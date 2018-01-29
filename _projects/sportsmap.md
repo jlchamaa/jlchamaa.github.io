@@ -1,12 +1,11 @@
 ---
-layout: default
+layout: project
 permalink: /projects/sportsmap
 title: Sports Map
 imagelink: "https://i.imgur.com/JVPQfrsl.jpg"
-tilecolor: "207, 0, 15"
+tilecolor: "240,52,52"
+tagline: LED backlit map which syncs with live sports scores
 ---
-# LED Live Sports Map
-
 I couldn't tell you where the idea came from, but it combined my love of maps, sports, LEDs, and programming, and it's one of the projects that I am most proud of.
 
 <video id="vid" style="width: 100%; max-width: 600px;" preload="auto" muted="muted" loop="loop" autoplay="autoplay">
@@ -43,7 +42,7 @@ The hardware challenge was both to create the map, and to wire and affix the LED
 
 ##### Map
 Firstly, since there isn't (to my knowledge) any existing maps that show a borderless North America and highlight exclusively the 40 American and Canadian cities that boast an MLB, NFL, or NBA team, I had to create one for myself.
-I used the same software that I used on my [UCLA Map]({{ site.baseurl  }}{% link _hobbies/UCLAmap.md %}), QGIS, the open source Geographic Information System.  I was able to create the following image using open-source data and make it fit the 3:2 ratio that I was aiming for.
+I used the same software that I used on my [UCLA Map]({{ site.baseurl  }}{% link _hobbies/uclamap.md %}), QGIS, the open source Geographic Information System.  I was able to create the following image using open-source data and make it fit the 3:2 ratio that I was aiming for.
 I then got the image printed on a 20"x30" canvas from Costco.
 
 <img src="https://i.imgur.com/h1dPvTTh.png" style="width:100%; max-width: 600px;"/>
