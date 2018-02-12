@@ -5,7 +5,7 @@ title: ArdoPilot
 permalink: /projects/ardopilot
 imagelink: "https://i.imgur.com/OioFC2Vl.jpg"
 tilecolor: "224, 130, 131"
-tagline: "A bio-reactive light and media controller"
+tagline: "A bio-reactive AV controller for in-flight entertainment systems"
 ---
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oJ_n7qzUJ5w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 

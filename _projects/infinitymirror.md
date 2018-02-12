@@ -4,7 +4,7 @@ permalink: /projects/mirror
 title: Infinity Mirror
 imagelink: "https://i.imgur.com/sHOmgG1m.png"
 tilecolor: "200,200,200"
-tagline: Colorful infinity mirror illusion
+tagline: A colorful infinity mirror illusion
 ---
 <video id="vid" style="width: 100%; max-width: 600px;" preload="auto" muted="muted" loop="loop" autoplay="autoplay">
 <source src="https://giant.gfycat.com/BlaringSlimIndigowingedparrot.webm">

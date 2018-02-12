@@ -4,7 +4,7 @@ permalink: /projects/wickedwinch
 title: The Wicked Winch
 imagelink: "https://i.imgur.com/pmsGC4Fl.png"
 tilecolor: "190, 144, 212"
-tagline: "UCLA Capstone Project: Autonomus Robot"
+tagline: "An autonomous-driving ball-launching robotics capstone project"
 ---
 <img src="https://i.imgur.com/ugMtKiZ.jpg" style="width:100%; max-width: 600px;"/>
 

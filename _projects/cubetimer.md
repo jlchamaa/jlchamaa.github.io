@@ -5,7 +5,7 @@ title: CLI Cube Timer
 permalink: /projects/cubetimer
 imagelink: "https://i.imgur.com/DdsDWbXm.png"
 tilecolor: "142, 68, 173"
-tagline: Python & ncurses cube timer for the command line
+tagline: A Python app for timing and tracking cube solves right from the Linux CLI
 ---
 <img src="https://i.imgur.com/DdsDWbX.png" style="width:100%; max-width: 600px;"/>
 

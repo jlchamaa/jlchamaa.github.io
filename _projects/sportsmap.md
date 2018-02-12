@@ -4,7 +4,7 @@ permalink: /projects/sportsmap
 title: Sports Map
 imagelink: "https://i.imgur.com/JVPQfrsl.jpg"
 tilecolor: "240,52,52"
-tagline: LED backlit map which syncs with live sports scores
+tagline: An LED backlit canvas map that syncs with live sports scores
 ---
 I couldn't tell you where the idea came from, but it combined my love of maps, sports, LEDs, and programming, and it's one of the projects that I am most proud of.
 

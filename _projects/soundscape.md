@@ -4,7 +4,7 @@ permalink: /projects/soundscape
 title: SoundScape
 imagelink: "https://i.imgur.com/LKHNFGsm.png"
 tilecolor: "37, 116, 169"
-tagline: Location-aware self-modulating speakers
+tagline: A device to create web-connected location-aware smart speakers
 ---
 IDEAHacks, the premier west coast hardware hackathon, is hosted in Ackerman Grand Ballroom at UCLA. On a 36-hour time limit, along with two of my UCLA Aerospace engineering friends and a computer scientist from USC, we developed **Soundscape**!  We placed [third](https://www.facebook.com/ideahacks.la/photos/a.1456888661229688.1073741828.1451652401753314/1653275828257636/) in the competition and won Fitbits!
 
