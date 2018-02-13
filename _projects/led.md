@@ -82,7 +82,7 @@ The picture at the top of this page shows how it's set up currently - as of Febr
 
 I also hacked into the the Python code running Mopidy, to see whether I could send web requests to my Flask server in tune with the frequencies of the music being played.  Without an addressable LED strip though, it is pretty hard to turn music into a very convincing visual.  Here's my best go at it. 
 
-<video id="vid" style="width: 100%; max-width: 600px; controls"  >
+<video id="vid" style="width: 100%; max-width: 600px;" controls >
 <source src="https://scontent-lax3-1.cdninstagram.com/vp/594aabedf0c73b8c1750440f5f4532ef/5A85D196/t50.2886-16/26826267_154946995157921_1283383833462308864_n.mp4">
 </video>
 
