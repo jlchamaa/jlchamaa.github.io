@@ -19,14 +19,14 @@ title: Jean-Luc Chamaa
 description: >- # this means to ignore newlines until "baseurl:"
  Jean-Luc is a mechanical engineer by training, a software engineer by passion, and a full-on nerd by birth. 
 bio: Software Engineer, UCLA Mechanical Engineering Alumnus, maker, burrito connoisseur, and undisputed bona-fide nerd. 
+job: Zoox
 email: jlchamaa@gmail.com
-facebook: jlchamaa
 linkedin: jlchamaa
-instagram: jlchamaa
 github-url: jlchamaa
+substack: wawa
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-logo: "/assets/img/myProf.png"
+logo: "/assets/img/prof2.jpg"
 background: '/assets/img/mysmallbg.jpg'
 tiled_bg:  false   # Set this true if you want to tile your background image, otherwise it will be covered
 

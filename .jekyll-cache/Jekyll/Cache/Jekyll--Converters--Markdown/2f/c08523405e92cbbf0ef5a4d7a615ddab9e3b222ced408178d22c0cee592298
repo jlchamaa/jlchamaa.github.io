@@ -1,0 +1,192 @@
+I"l)<div style="position:relative;padding-bottom:54%"><video style="width:100%;height:100%;position:absolute;top:0;left:0" preload="auto" loop="loop" autoplay="autoplay" controls="">
+<!--source src="https://giant.gfycat.com/PettyLightheartedFalcon.webm"-->
+<source src="https://giant.gfycat.com/UnderstatedGargantuanLarva.webm" />
+</video></div>
+<p class="mycaption">Poly Cubed: Pomona, CA – 28.67 seconds</p>
+
+<hr />
+
+<h3 id="fishy-method">Fishy Method</h3>
+
+<p>I’ve been solving 3x3 Rubik’s Cubes for 10+ years now.  My methodology, a semi-custom Fridrich derivative I call ‘Fishy Method’ is far from optimal, but I’ve come to enjoy the creative freedom it lends me, and the relative few amount of algorithms that I need to commit to memory.
+My current average solve time is around 30 seconds, which is hardly record shattering, but fast enough for a decent party trick. (I party with nerds)</p>
+
+<hr />
+
+<h4 id="the-cross">The Cross</h4>
+<p>The first, easiest, and most critical portion of the solve is to get ‘the cross’ solved.  The cross is a + sign of the same color on one side, with edges extending over into the four surrounding centers, as shown below.  By convention, most speedcubers start with white, but the same ideas work for any start color.</p>
+<div style="position:relative;padding-bottom:54%"><video style="width:100%;height:100%;position:absolute;top:0;left:0" preload="auto" loop="loop" autoplay="autoplay" controls="">
+<source src="https://i.imgur.com/96IWLB5.mp4" />
+</video></div>
+<p>This portion of the solve doesn’t really depend on rote memorization of algs, but on a good geometrical understanding of the cube.  Typically, a speedcuber is allowed 15 seconds to inspect the cube before starting the timer and beginning a solve. The majority of this time is usually spent devising a plan to create the cross. Being able to do this well requires the ability to look several moves ahead and understand the cube mechanics well.</p>
+
+<hr />
+
+<h4 id="f2l-first-two-layers">F2L (First Two Layers)</h4>
+<p>Slightly more mechanical, but still somewhat intuitive is the F2L portion of the solve. Though the first two layers also includes the cross from the last step, F2L usually refers to the process of adding in 4 sets of corners and edges to accompany the cross.
+Here you can see a corner-edge pair getting placed correctly into its ‘home’, using a classic F2L technique called ‘The Hammer’.</p>
+<div style="position:relative;padding-bottom:54%"><video style="width:100%;height:100%;position:absolute;top:0;left:0" preload="auto" loop="loop" autoplay="autoplay" controls="">
+<source src="https://i.imgur.com/XcXTcPb.mp4" />
+</video></div>
+<p>Now, most of the time, the edge and corner pieces will not be so conveniently paired for immediate execution of The Hammer.  The clever part of F2L is manipulating the pieces, wherever they are, into a contigious position so that they can be quickly placed with The Hammer.
+Do this for all four corners, and you’ll have the first two layers solved, and you’ll have completed F2L!</p>
+
+<div style="position:relative;padding-bottom:54%"><video style="width:100%;height:100%;position:absolute;top:0;left:0" preload="auto" loop="loop" autoplay="autoplay" controls="">
+<source src="https://i.imgur.com/zVSdy9F.mp4" />
+</video></div>
+
+<hr />
+
+<h4 id="top-cross">Top Cross</h4>
+<p>The top cross is where my method begins to deviate from the standard Fridrich method.  True speedcubers orient the top cross and the top corners at the same time. To do both in one quick algorithm requires the memorization of <a href="https://ruwix.com/the-rubiks-cube/advanced-cfop-fridrich/orient-the-last-layer-oll/">57</a> algorithms.  Lots of people can do it, but by separating the two, I can do each cross and corners using only two short algs for each.
+For the top cross, you can, from any starting point, use</p>
+<h5 id="f-r-u-r-u-f">F R U R’ U’ F’</h5>
+<div style="position:relative;padding-bottom:54%"><video style="width:100%;height:100%;position:absolute;top:0;left:0" preload="auto" loop="loop" autoplay="autoplay" controls="">
+<source src="https://i.imgur.com/KdTbs5C.mp4" />
+</video></div>
+<p>which will orient (yellow up) the top edges, but not permute them (place them with their respective centers).</p>
+
+<hr />
+
+<h4 id="oll-orient-the-last-layer">OLL (Orient the Last Layer)</h4>
+<p>Since the last layer edges were oriented in the last step, the corners are the only pieces left to be oriented.  Once this is done, the entire top face ought to be yellow, but the colors around on the sides will be out of position.
+To do this step, I employ a simple classic algorithm called the Sune, which looks like this.</p>
+<h5 id="r-u-r-u-r-u2-r">R U R’ U R U2 R’</h5>
+<div style="position:relative;padding-bottom:54%"><video style="width:100%;height:100%;position:absolute;top:0;left:0" preload="auto" loop="loop" autoplay="autoplay" controls="">
+<source src="https://i.imgur.com/Z0iGPGS.mp4" />
+</video></div>
+<p>The Sune orients the corners specifically from this starting position.</p>
+
+<p><img src="https://www.speedsolving.com/wiki/images/c/ce/Suneinfo.png" /></p>
+
+<p>Do you see the fishy??  That’s how this method got its name, somehow.</p>
+
+<p>However, by using a combination of the Sune and it’s cousin the ‘Anti-Sune’ (R U2 R’ U’ R U’ R’), you can orient any set of corners in no more than two algorithms.  It is massive convenience, at the loss of quite some time, but that’s the trade-off I choose to make.</p>
+
+<hr />
+
+<h4 id="pll-perumte-last-layer">PLL (Perumte Last Layer)</h4>
+<p>Fridrich’s method requires memorization of <a href="https://ruwix.com/the-rubiks-cube/advanced-cfop-fridrich/permutate-the-last-layer-pll/">21</a> distinct algorithms to tackle all possible permutations of the last layer.  It’s hard at this point in the solve to fudge your way out of just memorizing the algs, but there are some shortcuts I take, so that I only have to remember 7 of the 21, again accepting a loss in speed.  Some of the algs, like the G’s, can be completed by using two simpler algs.  Other algs can be ‘commuted’ to another alg via a few set up moves, and then commuted back.  It’s a hack, but it gets the job done for me. Below is a table describing my PLL strategy as of 2017.</p>
+<h5 id="y-perm">Y-Perm</h5>
+<div style="position:relative;padding-bottom:54%"><video style="width:100%;height:100%;position:absolute;top:0;left:0" preload="auto" loop="loop" autoplay="autoplay" controls="">
+<source src="https://giant.gfycat.com/ShamelessAlarmedEastsiberianlaika.webm" />
+</video></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Perm Name</th>
+      <th>Derivative</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-01.png" /></td>
+      <td><strong>A</strong></td>
+      <td><strong>Need to Know</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-02.png" /></td>
+      <td><strong>A</strong></td>
+      <td><strong>Need to Know</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-06.png" /></td>
+      <td><strong>U</strong></td>
+      <td><strong>Need to Know</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-07.png" /></td>
+      <td><strong>U</strong></td>
+      <td>Mirror of other <strong>U</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-08.png" /></td>
+      <td><strong>J</strong></td>
+      <td><strong>Need to Know</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-09.png" /></td>
+      <td><strong>J</strong></td>
+      <td><strong>Need to Know</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-10.png" /></td>
+      <td><strong>T</strong></td>
+      <td><strong>Need to Know</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-21.png" /></td>
+      <td><strong>Y</strong></td>
+      <td><strong>Need to Know</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-03.png" /></td>
+      <td><strong>E</strong></td>
+      <td>Two <strong>A</strong>’s or Two <strong>T</strong>’s</td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-04.png" /></td>
+      <td><strong>Z</strong></td>
+      <td>Two <strong>U</strong>’s</td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-05.png" /></td>
+      <td><strong>H</strong></td>
+      <td>Two <strong>U</strong>’s</td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-11.png" /></td>
+      <td><strong>R</strong></td>
+      <td>Commuted <strong>J</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-12.png" /></td>
+      <td><strong>R</strong></td>
+      <td>Commuted <strong>J</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-13.png" /></td>
+      <td><strong>F</strong></td>
+      <td>Commuted <strong>T</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-14.png" /></td>
+      <td><strong>G</strong></td>
+      <td><strong>A</strong> + <strong>U</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-15.png" /></td>
+      <td><strong>G</strong></td>
+      <td><strong>A</strong> + <strong>U</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-16.png" /></td>
+      <td><strong>G</strong></td>
+      <td><strong>A</strong> + <strong>U</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-17.png" /></td>
+      <td><strong>G</strong></td>
+      <td><strong>A</strong> + <strong>U</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-18.png" /></td>
+      <td><strong>V</strong></td>
+      <td>Commuted <strong>Y</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-19.png" /></td>
+      <td><strong>N</strong></td>
+      <td>Commuted <strong>T</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://ruwix.com/pics/fridrich/friedrich-pll-20.png" /></td>
+      <td><strong>N</strong></td>
+      <td>Commuted <strong>T</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+:ET
