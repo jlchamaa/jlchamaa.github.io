@@ -5,7 +5,7 @@ title: ASME
 imagelink: "https://i.imgur.com/7bN37VKm.jpg"
 tilecolor: "150,150,150"
 ---
-ASME at UCLA was the most impactful student group that I've ever been a part of.  I can only hope that I was as meaningful to them as they were to me.
+ASME at UCLA was the most impactful student group that I've been a part of.  I can only hope that I was as meaningful to them as they were to me.
 
 ### A Partial List of Accomplishments
 - Served 2 years as External Vice President.
